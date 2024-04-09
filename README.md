@@ -1,4 +1,6 @@
 # Portfolio
+![Technical_Skills](https://github.com/baekdori/Portfolio/assets/155928591/f8bbee9f-8853-4d98-a144-661bc1f40ece)
+<br>
 Front-End
 <br>
 HTML/CSS : 10/6
