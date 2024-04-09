@@ -6,7 +6,6 @@ HTML/CSS : 10/6
 JavaScript : 10/5
 
 <br>
-<br>
 Back-End
 <br>
 Python : 10/6
