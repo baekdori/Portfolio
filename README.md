@@ -4,7 +4,6 @@ Front-End
 HTML/CSS : 10/6
 <br>
 JavaScript : 10/5
-
 <br>
 Back-End
 <br>
