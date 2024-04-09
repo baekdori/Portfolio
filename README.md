@@ -3,14 +3,14 @@ Front-End
 <br>
 HTML/CSS : 10/6
 <br>
-JavaScript : 10/5
+JavaScript : 10/6
 
 <br>
 Back-End
 <br>
 Python : 10/6
 <br>
-JAVA : 10/4
+JAVA : 10/5
 <br>
 Spring Framework : 10/5
 
@@ -18,7 +18,7 @@ Spring Framework : 10/5
 <br>
 DataBase
 <br>
-Oracle : 10/3
+Oracle : 10/5
 
 <br>
 <br>
