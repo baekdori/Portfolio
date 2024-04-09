@@ -2,7 +2,7 @@
 ![Technical_Skills](https://github.com/baekdori/Portfolio/assets/155928591/bc424cb2-ca64-4e01-b152-e2179e9af012)
 
 
-<strong>경험사항</strong>
+##경험사항>
 <h2>1. 핵심프로젝트</h2>
 <br>
 팀원 : 이대길 조승혁 이정훈 변지원
