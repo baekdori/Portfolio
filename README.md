@@ -1,5 +1,6 @@
 # Portfolio
-![Technical_Skills](https://github.com/baekdori/Portfolio/assets/155928591/f8bbee9f-8853-4d98-a144-661bc1f40ece)
+![Technical_Skills](https://github.com/baekdori/Portfolio/assets/155928591/bc424cb2-ca64-4e01-b152-e2179e9af012)
+
 <br>
 Front-End
 <br>
