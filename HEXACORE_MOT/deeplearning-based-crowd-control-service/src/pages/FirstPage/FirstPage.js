@@ -157,7 +157,7 @@ const FirstPage = () => {
     <>
       <div className={styles.content}>
         <div id={styles.title}>
-          <h2>요약 정보</h2>
+          <h2>실시간 현황 정보</h2>
         </div>
         <div>
           <div className={styles.Raw}>
