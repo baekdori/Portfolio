@@ -1,0 +1,106 @@
+/* 노멀라이즈 시작 */
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* 노멀라이즈 끝 */
+
+/* CSS */
+body {
+  height: 5000px;
+  background: var();
+}
+
+/* 사이드바의 너비와 높이를 변수를 통해 통제 */
+:root {
+  --side-bar-width: 120px;
+  --side-bar-height: 100%;
+}
+
+.sidebar {
+  position: fixed; /* 스크롤을 따라오도록 지정 */
+  background-color: black;
+  width: var(--side-bar-width);
+  min-height: var(
+    --side-bar-height
+  ); /* 사이드바의 높이를 전체 화면 높이의 90%로 지정 */
+  margin: 0 auto;
+}
+
+.sidebar .box {
+  display: flex;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar .box:hover {
+  display: flex;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: rgb(61, 61, 61);
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar .icon {
+  size: 100;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.sidebar .text {
+  display: flex;
+  color: white;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sidebar .profile {
+  width: 8rem;
+  height: 8rem;
+  background: white;
+  border-radius: 60rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sidebar .photo {
+  width: 8rem;
+  height: 8rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sidebar .btn {
+  width: 10rem;
+  padding: 1rem;
+  color: white;
+}

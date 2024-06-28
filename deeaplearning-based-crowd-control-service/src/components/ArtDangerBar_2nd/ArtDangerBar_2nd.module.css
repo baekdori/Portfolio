@@ -1,0 +1,42 @@
+.bar-graph-container {
+    width: 922px;
+    height: 450px;
+    font-family: 'Pretendard', sans-serif;
+  }
+
+  .bar-graph-title-container {
+    width: 922px;
+    height: 50px;
+    background-color: #CDD7E4;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  
+  .bar-graph-title {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Pretendard', sans-serif;
+  }
+  .bar-graph .x-axis path,
+  .bar-graph .x-axis line {
+    stroke: black;
+    stroke-width: 2px;
+  }
+  
+  .bar-graph .y-axis path,
+  .bar-graph .y-axis line {
+    stroke: black;
+    stroke-width: 2px;
+  }
+  
+  .bar-graph .bar {
+    fill: steelblue;
+  }
+  
+  .bar-graph text {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: medium;
+    font-size: 20px;
+  }

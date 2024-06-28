@@ -1,0 +1,33 @@
+.chartContainer {
+    width : 640px;
+    height : 388px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.chartTitle {
+    width : 640px;
+    height : 32px;
+    background-color : #CDD7E4;
+    display : flex;
+    justify-content : center;
+    margin-bottom : 44px;
+    font-family: 'Pretendard', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.titleText {
+    font-family : 'Pretendard', sans-serif;
+    font-weight : bold;
+    font-size : 22px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.chart {
+
+    margin-top: 44px;
+}
