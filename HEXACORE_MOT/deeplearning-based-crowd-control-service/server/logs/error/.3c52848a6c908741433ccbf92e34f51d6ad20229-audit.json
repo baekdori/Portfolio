@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\smhrd\\Desktop\\1. 실전\\deeaplearning-based-crowd-control-service\\server\\logs\\error\\.3c52848a6c908741433ccbf92e34f51d6ad20229-audit.json",
+    "files": [
+        {
+            "date": 1718678828221,
+            "name": "C:\\Users\\smhrd\\Desktop\\1. 실전\\deeaplearning-based-crowd-control-service\\server\\logs\\error\\2024-06-18.error.log",
+            "hash": "c6f8e18c202d6fe96c456a97d0a6a31b1714800174ef74f7b77cb62e1f686afa"
+        },
+        {
+            "date": 1718755912845,
+            "name": "C:\\Users\\smhrd\\Desktop\\1. 실전\\deeaplearning-based-crowd-control-service\\server\\logs\\error\\2024-06-19.error.log",
+            "hash": "e3918f9815ab290f860022a04507561782e8ec726c090a9d68294f4e1a026572"
+        }
+    ],
+    "hashType": "sha256"
+}

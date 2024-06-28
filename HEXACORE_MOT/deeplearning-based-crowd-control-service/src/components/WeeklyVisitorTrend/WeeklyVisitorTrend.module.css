@@ -1,0 +1,87 @@
+tr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.VisitorTrend {
+  grid-column: 1/5;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0%;
+  justify-items: center;
+  align-items: center;
+}
+
+.visitor {
+  width: 100%;
+}
+
+.infoCol {
+  /* display: grid; */
+  /* grid-template-rows: 20% auto; */
+  align-items: center;
+  justify-content: center;
+}
+
+.numOrGuideRaw {
+  display: flex;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.numCol {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+}
+
+.num {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.arrawCol {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.guide {
+  align-items: center;
+  margin: 0px;
+  font-size: 15px;
+}
+
+.rguide {
+  font-weight: bold;
+  margin: 1rem;
+  color: grey;
+}
+
+.borderLine {
+  border-top: 0.5px solid rgb(218, 218, 218);
+  position: relative;
+  margin-right: 10px;
+}
+
+svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.td {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  align-content: center;
+  justify-content: center;
+}

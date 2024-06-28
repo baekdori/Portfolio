@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\SMHRD\\Documents\\GitHub\\kdt-ad-dashboard\\deeaplearning-based-crowd-control-service\\server\\logs\\.06b34e93acda89bf003a307696339c6717967299-audit.json",
+    "files": [
+        {
+            "date": 1717981082836,
+            "name": "C:\\Users\\SMHRD\\Documents\\GitHub\\kdt-ad-dashboard\\deeaplearning-based-crowd-control-service\\server\\logs\\2024-06-10.exception.log",
+            "hash": "a46480c73dc8a30ae26f741b8d3782549256f85934bc22bec1206fed2d06b86a"
+        }
+    ],
+    "hashType": "sha256"
+}

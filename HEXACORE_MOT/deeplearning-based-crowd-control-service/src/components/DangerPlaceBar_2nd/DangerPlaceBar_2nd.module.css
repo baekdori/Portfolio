@@ -1,0 +1,26 @@
+.bar-graph {
+  width: 100%;
+  height: 450px; /* 또는 원하는 높이로 설정 */
+}
+
+.bar-graph .x-axis path,
+.bar-graph .x-axis line {
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.bar-graph .y-axis path,
+.bar-graph .y-axis line {
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.bar-graph-container {
+  width: 100%;
+  height : 450px;
+}
+
+svg {
+  width: 100%;
+  overflow: visible; /* 숫자가 가려지지 않도록 설정 */
+}

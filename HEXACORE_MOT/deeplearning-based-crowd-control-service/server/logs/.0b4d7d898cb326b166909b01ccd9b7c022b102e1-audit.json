@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/logs/.0b4d7d898cb326b166909b01ccd9b7c022b102e1-audit.json",
+    "files": [
+        {
+            "date": 1717828197080,
+            "name": "/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/logs/2024-06-08.error.log",
+            "hash": "8122818cdd38322035302bb8aa7ca1c181c7ffe4f8a8930f10bde44b088ab011"
+        }
+    ],
+    "hashType": "sha256"
+}

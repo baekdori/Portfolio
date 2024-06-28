@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+2024-06-14 10:39:48 [Winston 로그] error: Exhibition ID: undefined가 user1에 존재하지 않습니다
+2024-06-14 10:40:16 [Winston 로그] error: Exhibition ID: undefined가 user1에 존재하지 않습니다
+2024-06-14 11:01:46 [Winston 로그] error: Exhibition ID: undefined가 user1에 존재하지 않습니다
+2024-06-14 11:14:30 [Winston 로그] error: Exhibition ID: undefined가 user1에 존재하지 않습니다
+2024-06-14 16:09:47 [Winston 로그] error: bywork에서 아이디 또는 전시관 또는 날짜가 입력되지 않았습니다
+2024-06-14 16:36:12 [Winston 로그] error: bywork에서 아이디 또는 전시관 또는 날짜가 입력되지 않았습니다
+=======
+2024-06-14 09:47:52 [Winston 로그] error: bywork에서 아이디 또는 전시관 또는 날짜가 입력되지 않았습니다
+>>>>>>> 89765f73fa8bb5073286f18a4a6e002766966c7f

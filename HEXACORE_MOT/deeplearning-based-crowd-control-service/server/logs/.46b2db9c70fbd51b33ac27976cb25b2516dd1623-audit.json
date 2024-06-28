@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/server/logs/.46b2db9c70fbd51b33ac27976cb25b2516dd1623-audit.json",
+    "files": [
+        {
+            "date": 1717830168501,
+            "name": "/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/server/logs/2024-06-08.exception.log",
+            "hash": "78992ccd395427b7610ba8887f4e51edb71e2c27ea91109d73f5cd39e21f7e51"
+        },
+        {
+            "date": 1717913201483,
+            "name": "/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/server/logs/2024-06-09.exception.log",
+            "hash": "1d7639a0824eb753b0062f113bad97d03f9503b34dd97d7016557265420f565a"
+        },
+        {
+            "date": 1717945256122,
+            "name": "/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/server/logs/2024-06-10.exception.log",
+            "hash": "ac373a116221db7d032613fb9fface7364e7ce2f98fa4cd503bb56bc54fcad3a"
+        },
+        {
+            "date": 1718064469324,
+            "name": "/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/server/logs/2024-06-11.exception.log",
+            "hash": "51a91c7f6f40769af0636d7f3fb96c82164c23d7ba10606a6be779337c871dd1"
+        }
+    ],
+    "hashType": "sha256"
+}

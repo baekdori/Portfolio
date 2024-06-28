@@ -1,0 +1,216 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-right: 240px; /* 오른쪽 패딩 240px 추가 */
+}
+
+.content {
+  padding-left: 300px; /* 왼쪽 마진 240px */
+  padding-right: 200px; /* 오른쪽 마진 120px */
+  width: calc(100% - 500px); /* 좌우 마진 300px + 220px 제외한 너비 */
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.fitWidth {
+  width: fit-content;
+}
+
+#title {
+  font-size: 30px;
+  margin-bottom: 16px;
+  padding-top: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.thirdTitle {
+  margin-right: 5rem;
+}
+
+.dropdownContainer {
+  position: relative;
+  width: 5.2083%; /* 100px */
+  height: 3.3333%; /* 36px */
+  background-color: #b4c4d6;
+}
+
+.calendarIcon {
+  position: fixed; /* 페이지의 스크롤에 영향을 받지 않도록 설정 */
+  bottom: 1.8519%; /* 20px */
+  right: 1.0417%; /* 20px */
+  z-index: 2; /* 다른 요소들보다 위에 표시되도록 설정 */
+}
+
+.calendarIcon img {
+  width: 2.6042%; /* 50px */
+  height: 4.6296%; /* 50px */
+  cursor: pointer;
+}
+
+@keyframes slide-fade-in-dropdown-animation {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.slide-fade-in-dropdown {
+  overflow: hidden;
+}
+
+.slide-fade-in-dropdown > ul {
+  animation: slide-fade-in-dropdown-animation 0.4s ease;
+}
+
+@keyframes slide-fade-out-dropdown-animation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.slide-fade-out-dropdown {
+  overflow: hidden;
+}
+
+.slide-fade-out-dropdown > ul {
+  animation: slide-fade-out-dropdown-animation 0.4s ease;
+  animation-fill-mode: forwards;
+}
+
+.components-dropdown > ul {
+  position: relative;
+  top: 0.2604%; /* 5px */
+  margin-top: 0;
+  margin-bottom: 0.2604%; /* 5px */
+  padding-left: 0;
+  list-style: none;
+}
+
+.gridcontent {
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  width: 100%;
+  gap: 2.0833%; /* 40px */
+  text-align: center;
+}
+
+.gridcontent2 {
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  gap: 2.0833%; /* 40px */
+  text-align: center;
+  font-size: medium;
+  position: relative;
+  bottom: 3.7037%; /* 40px */
+}
+
+.dinfoBox {
+  width: 7.8125%; /* 150px */
+  height: 14.8148%; /* 160px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.half {
+  margin-right: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid2row {
+  background: rgb(255, 255, 255);
+  padding: 0 26.0417% 16.6667% 26.0417%; /* 5rem */
+}
+
+.griditem {
+  padding: 1rem;
+}
+
+.SecondRaw {
+  display: flex;
+  width: 100%;
+}
+
+.row1,
+.row2,
+.row3,
+.row5 {
+  width: 100%;
+}
+
+.row3 {
+  width: 100%;
+}
+
+.row5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.0417%; /* 20px */
+}
+
+.hcontainer {
+  display: flex;
+  width: 100%;
+}
+
+.hcenter {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  padding-left: 0.4167%; /* 8px */
+}
+
+.hcenterdanger {
+  margin-left: 1.0417%; /* 20px */
+}
+
+.graphContainer {
+  width: 100%;
+}
+
+.txt {
+  margin: 5rem;
+}
+
+.genderbar {
+  font-size: 2rem;
+  align-items: center;
+}
+
+.exhibitionSelect {
+  display: flex;
+  margin: 3rem;
+  padding: 8px;
+  font-size: 2rem;
+  align-items: start;
+}
+
+.shiftDown {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: start;
+}

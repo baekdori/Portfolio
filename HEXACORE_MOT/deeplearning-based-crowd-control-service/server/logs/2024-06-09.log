@@ -1,0 +1,250 @@
+2024-06-09 15:06:46 [Winston 로그] info: crowded router
+2024-06-09 15:06:46 [Winston 로그] info: crowded 성공
+2024-06-09 15:06:46 [Winston 로그] info: crowded router
+2024-06-09 15:06:46 [Winston 로그] info: crowded 성공
+2024-06-09 15:07:23 [Winston 로그] info: byage router 요청
+2024-06-09 15:07:23 [Winston 로그] info: byage router 시작
+2024-06-09 15:07:23 [Winston 로그] error: 아이디 또는 전시관이 입력되지 않았습니다
+2024-06-09 15:07:38 [Winston 로그] info: byage router 요청
+2024-06-09 15:07:38 [Winston 로그] info: byage router 시작
+2024-06-09 15:07:38 [Winston 로그] info: Checking if user ID user1 exists
+2024-06-09 15:07:38 [Winston 로그] info: Checking if exhibition ID exhb exists for user ID user1
+2024-06-09 15:07:38 [Winston 로그] error: Exhibition ID exhb does not exist for user ID user1
+2024-06-09 15:07:50 [Winston 로그] info: byage router 요청
+2024-06-09 15:07:50 [Winston 로그] info: byage router 시작
+2024-06-09 15:07:50 [Winston 로그] info: Checking if user ID user1 exists
+2024-06-09 15:07:50 [Winston 로그] info: Checking if exhibition ID exhb11 exists for user ID user1
+2024-06-09 15:07:50 [Winston 로그] error: Exhibition ID exhb11 does not exist for user ID user1
+2024-06-09 15:07:51 [Winston 로그] info: byage router 요청
+2024-06-09 15:07:51 [Winston 로그] info: byage router 시작
+2024-06-09 15:07:51 [Winston 로그] info: Checking if user ID user1 exists
+2024-06-09 15:07:51 [Winston 로그] info: Checking if exhibition ID exhb1 exists for user ID user1
+2024-06-09 15:07:51 [Winston 로그] info: Fetching age data for user ID user1 and exhibition ID exhb1
+2024-06-09 15:07:51 [Winston 로그] info: Successfully fetched age data for user ID user1 and exhibition ID exhb1
+2024-06-09 15:09:35 [Winston 로그] info: byage router 요청
+2024-06-09 15:09:35 [Winston 로그] info: byage router 시작
+2024-06-09 15:09:35 [Winston 로그] info: user1 존재 검사
+2024-06-09 15:09:35 [Winston 로그] info: exhb5 검사
+2024-06-09 15:09:35 [Winston 로그] error: Exhibition ID exhb5가 user1에 존재하지 않습니다
+2024-06-09 15:13:03 [Winston 로그] info: byage router 요청
+2024-06-09 15:13:03 [Winston 로그] info: byage router 시작
+2024-06-09 15:13:03 [Winston 로그] info: user44 존재 검사
+2024-06-09 15:13:03 [Winston 로그] error: User ID user44 가 존재하지 않습니다
+2024-06-09 15:38:29 [Winston 로그] info: bytime method
+2024-06-09 15:38:29 [Winston 로그] info: bytime 성공
+2024-06-09 15:39:20 [Winston 로그] info: sametime router
+2024-06-09 15:39:20 [Winston 로그] info: sametime 성공
+2024-06-09 15:40:03 [Winston 로그] info: crowded router
+2024-06-09 15:40:03 [Winston 로그] info: crowded 성공
+2024-06-09 15:40:19 [Winston 로그] info: sametime router
+2024-06-09 15:40:19 [Winston 로그] info: sametime 성공
+2024-06-09 15:41:26 [Winston 로그] info: login router
+2024-06-09 15:41:26 [Winston 로그] info: 로그인에 성공했습니다.
+2024-06-09 15:41:26 [Winston 로그] info: donutchart router
+2024-06-09 15:41:26 [Winston 로그] info: lastweek router
+2024-06-09 15:41:26 [Winston 로그] info: lastweek 성공
+2024-06-09 15:41:26 [Winston 로그] info: donutchart 성공
+2024-06-09 15:41:26 [Winston 로그] info: sametime router
+2024-06-09 15:41:26 [Winston 로그] info: sametime 성공
+2024-06-09 15:41:26 [Winston 로그] info: bytime method
+2024-06-09 15:41:26 [Winston 로그] info: bytime 성공
+2024-06-09 15:42:26 [Winston 로그] info: donutchart router
+2024-06-09 15:42:27 [Winston 로그] info: donutchart 성공
+2024-06-09 15:42:27 [Winston 로그] info: sametime router
+2024-06-09 15:42:27 [Winston 로그] info: lastweek router
+2024-06-09 15:42:27 [Winston 로그] info: lastweek 성공
+2024-06-09 15:42:27 [Winston 로그] info: sametime 성공
+2024-06-09 15:42:27 [Winston 로그] info: bytime method
+2024-06-09 15:42:27 [Winston 로그] info: bytime 성공
+2024-06-09 15:42:30 [Winston 로그] info: lastweek router
+2024-06-09 15:42:30 [Winston 로그] info: lastweek 성공
+2024-06-09 15:43:26 [Winston 로그] info: donutchart router
+2024-06-09 15:43:27 [Winston 로그] info: donutchart 성공
+2024-06-09 15:43:27 [Winston 로그] info: sametime router
+2024-06-09 15:43:27 [Winston 로그] info: lastweek router
+2024-06-09 15:43:27 [Winston 로그] info: lastweek 성공
+2024-06-09 15:43:27 [Winston 로그] info: sametime 성공
+2024-06-09 15:43:27 [Winston 로그] info: bytime method
+2024-06-09 15:43:27 [Winston 로그] info: bytime 성공
+2024-06-09 15:44:27 [Winston 로그] info: donutchart router
+2024-06-09 15:44:27 [Winston 로그] info: donutchart 성공
+2024-06-09 15:44:27 [Winston 로그] info: sametime router
+2024-06-09 15:44:27 [Winston 로그] info: lastweek router
+2024-06-09 15:44:27 [Winston 로그] info: lastweek 성공
+2024-06-09 15:44:27 [Winston 로그] info: sametime 성공
+2024-06-09 15:44:27 [Winston 로그] info: bytime method
+2024-06-09 15:44:27 [Winston 로그] info: bytime 성공
+2024-06-09 15:44:30 [Winston 로그] info: crowded router
+2024-06-09 15:44:30 [Winston 로그] info: bygender router
+2024-06-09 15:44:30 [Winston 로그] info: bywork router
+2024-06-09 15:44:30 [Winston 로그] info: crowded 성공
+2024-06-09 15:44:30 [Winston 로그] info: bygender 성공
+2024-06-09 15:44:30 [Winston 로그] info: byage router 요청
+2024-06-09 15:44:30 [Winston 로그] info: byage router 시작
+2024-06-09 15:44:30 [Winston 로그] info: user1 존재 검사
+2024-06-09 15:44:30 [Winston 로그] info: exhb1 검사
+2024-06-09 15:44:30 [Winston 로그] info: Fetching age data for user ID user1 and exhibition ID exhb1
+2024-06-09 15:44:30 [Winston 로그] info: Successfully fetched age data for user ID user1 and exhibition ID exhb1
+2024-06-09 15:44:30 [Winston 로그] info: bywork 성공
+2024-06-09 15:45:37 [Winston 로그] info: getExhb router
+2024-06-09 15:45:37 [Winston 로그] error: getexhb router 에러 : Unknown column 'userId' in 'where clause'
+2024-06-09 15:45:38 [Winston 로그] info: crowded router
+2024-06-09 15:45:38 [Winston 로그] info: bywork router
+2024-06-09 15:45:38 [Winston 로그] info: bygender router
+2024-06-09 15:45:38 [Winston 로그] info: bygender 성공
+2024-06-09 15:45:38 [Winston 로그] info: byage router 요청
+2024-06-09 15:45:38 [Winston 로그] info: byage router 시작
+2024-06-09 15:45:38 [Winston 로그] info: user1 존재 검사
+2024-06-09 15:45:38 [Winston 로그] info: exhb1 검사
+2024-06-09 15:45:38 [Winston 로그] info: Fetching age data for user ID user1 and exhibition ID exhb1
+2024-06-09 15:45:38 [Winston 로그] info: Successfully fetched age data for user ID user1 and exhibition ID exhb1
+2024-06-09 15:45:38 [Winston 로그] info: crowded 성공
+2024-06-09 15:45:38 [Winston 로그] info: bywork 성공
+2024-06-09 15:47:17 [Winston 로그] info: visitor router 요청
+2024-06-09 15:47:17 [Winston 로그] info: visitor router 시작
+2024-06-09 15:47:17 [Winston 로그] info: crowded router 요청
+2024-06-09 15:47:17 [Winston 로그] info: crowded router 시작
+2024-06-09 15:47:17 [Winston 로그] info: bywork router 요청
+2024-06-09 15:47:17 [Winston 로그] info: bywork router 시작
+2024-06-09 15:47:17 [Winston 로그] info: bygender router 요청
+2024-06-09 15:47:17 [Winston 로그] info: bygender router 시작
+2024-06-09 15:47:17 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 평균 방문객 정보 DB 조회
+2024-06-09 15:47:17 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 성별 정보 DB 조회
+2024-06-09 15:47:17 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 구역별 정보 DB 조회
+2024-06-09 15:47:17 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 혼잡도 정보 DB 조회
+2024-06-09 15:47:17 [Winston 로그] info: visitor 성공
+2024-06-09 15:47:17 [Winston 로그] info: bygender 성공
+2024-06-09 15:47:17 [Winston 로그] info: byage router 요청
+2024-06-09 15:47:17 [Winston 로그] info: byage router 시작
+2024-06-09 15:47:17 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 연령별 정보 DB 조회
+2024-06-09 15:47:17 [Winston 로그] info: byage 성공
+2024-06-09 15:47:17 [Winston 로그] info: crowded 성공
+2024-06-09 15:47:17 [Winston 로그] info: bywork 성공
+2024-06-09 15:48:47 [Winston 로그] info: visitor router 요청
+2024-06-09 15:48:47 [Winston 로그] info: visitor router 시작
+2024-06-09 15:48:47 [Winston 로그] info: crowded router 요청
+2024-06-09 15:48:47 [Winston 로그] info: crowded router 시작
+2024-06-09 15:48:47 [Winston 로그] info: bywork router 요청
+2024-06-09 15:48:47 [Winston 로그] info: bywork router 시작
+2024-06-09 15:48:47 [Winston 로그] info: bygender router 요청
+2024-06-09 15:48:47 [Winston 로그] info: bygender router 시작
+2024-06-09 15:48:47 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 평균 방문객 정보 DB 조회
+2024-06-09 15:48:47 [Winston 로그] error: visitor db 에러 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELEC
+		e.exhb_id,
+		DATE_FORMAT(a.time, '%Y-%m-%d %H:00:00') AS hour,
+		AVG(
+		' at line 1
+2024-06-09 15:48:47 [Winston 로그] error: visitor router 에러:  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELEC
+		e.exhb_id,
+		DATE_FORMAT(a.time, '%Y-%m-%d %H:00:00') AS hour,
+		AVG(
+		' at line 1
+2024-06-09 15:48:47 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 혼잡도 정보 DB 조회
+2024-06-09 15:48:47 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 성별 정보 DB 조회
+2024-06-09 15:48:47 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 구역별 정보 DB 조회
+2024-06-09 15:48:47 [Winston 로그] info: bygender 성공
+2024-06-09 15:48:47 [Winston 로그] info: byage router 요청
+2024-06-09 15:48:47 [Winston 로그] info: byage router 시작
+2024-06-09 15:48:47 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 연령별 정보 DB 조회
+2024-06-09 15:48:47 [Winston 로그] info: crowded 성공
+2024-06-09 15:48:47 [Winston 로그] info: byage 성공
+2024-06-09 15:48:47 [Winston 로그] info: bywork 성공
+2024-06-09 15:49:45 [Winston 로그] info: visitor router 요청
+2024-06-09 15:49:45 [Winston 로그] info: visitor router 시작
+2024-06-09 15:49:45 [Winston 로그] info: crowded router 요청
+2024-06-09 15:49:45 [Winston 로그] info: crowded router 시작
+2024-06-09 15:49:45 [Winston 로그] info: bywork router 요청
+2024-06-09 15:49:45 [Winston 로그] info: bywork router 시작
+2024-06-09 15:49:45 [Winston 로그] info: bygender router 요청
+2024-06-09 15:49:45 [Winston 로그] info: bygender router 시작
+2024-06-09 15:49:45 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 평균 방문객 정보 DB 조회
+2024-06-09 15:49:45 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 성별 정보 DB 조회
+2024-06-09 15:49:45 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 구역별 정보 DB 조회
+2024-06-09 15:49:45 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 혼잡도 정보 DB 조회
+2024-06-09 15:49:45 [Winston 로그] error: visitor db 에러 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELEC
+		e.exhb_id,
+		DATE_FORMAT(a.time, '%Y-%m-%d %H:00:00') AS hour,
+		AVG(
+		' at line 1
+2024-06-09 15:49:45 [Winston 로그] error: visitor router 에러:  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELEC
+		e.exhb_id,
+		DATE_FORMAT(a.time, '%Y-%m-%d %H:00:00') AS hour,
+		AVG(
+		' at line 1
+2024-06-09 15:49:45 [Winston 로그] info: bygender 성공
+2024-06-09 15:49:45 [Winston 로그] info: byage router 요청
+2024-06-09 15:49:45 [Winston 로그] info: byage router 시작
+2024-06-09 15:49:45 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 연령별 정보 DB 조회
+2024-06-09 15:49:45 [Winston 로그] info: crowded 성공
+2024-06-09 15:49:45 [Winston 로그] info: byage 성공
+2024-06-09 15:49:45 [Winston 로그] info: bywork 성공
+2024-06-09 15:49:58 [Winston 로그] info: visitor router 요청
+2024-06-09 15:49:58 [Winston 로그] info: visitor router 시작
+2024-06-09 15:49:58 [Winston 로그] info: crowded router 요청
+2024-06-09 15:49:58 [Winston 로그] info: crowded router 시작
+2024-06-09 15:49:58 [Winston 로그] info: bywork router 요청
+2024-06-09 15:49:58 [Winston 로그] info: bywork router 시작
+2024-06-09 15:49:58 [Winston 로그] info: bygender router 요청
+2024-06-09 15:49:58 [Winston 로그] info: bygender router 시작
+2024-06-09 15:49:58 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 평균 방문객 정보 DB 조회
+2024-06-09 15:49:58 [Winston 로그] error: visitor db 에러 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELEC
+		e.exhb_id,
+		DATE_FORMAT(a.time, '%Y-%m-%d %H:00:00') AS hour,
+		AVG(
+		' at line 1
+2024-06-09 15:49:58 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 혼잡도 정보 DB 조회
+2024-06-09 15:49:58 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 성별 정보 DB 조회
+2024-06-09 15:49:58 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 구역별 정보 DB 조회
+2024-06-09 15:49:58 [Winston 로그] info: bygender 성공
+2024-06-09 15:49:58 [Winston 로그] info: byage router 요청
+2024-06-09 15:49:58 [Winston 로그] info: byage router 시작
+2024-06-09 15:49:58 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 연령별 정보 DB 조회
+2024-06-09 15:49:58 [Winston 로그] info: crowded 성공
+2024-06-09 15:49:58 [Winston 로그] info: byage 성공
+2024-06-09 15:49:58 [Winston 로그] info: bywork 성공
+2024-06-09 23:53:03 [Winston 로그] info: visitor router 요청
+2024-06-09 23:53:03 [Winston 로그] info: visitor router 시작
+2024-06-09 23:53:03 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 평균 방문객 정보 DB 조회
+2024-06-09 23:53:03 [Winston 로그] info: visitor 성공
+2024-06-09 23:53:32 [Winston 로그] info: weekavg router 요청
+2024-06-09 23:53:32 [Winston 로그] info: weekavg router 시작
+2024-06-09 23:53:32 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:53:47 [Winston 로그] info: weekavg router 요청
+2024-06-09 23:53:47 [Winston 로그] info: weekavg router 시작
+2024-06-09 23:53:47 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:54:04 [Winston 로그] info: visitor router 요청
+2024-06-09 23:54:04 [Winston 로그] info: visitor router 시작
+2024-06-09 23:54:04 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 평균 방문객 정보 DB 조회
+2024-06-09 23:54:04 [Winston 로그] info: visitor 성공
+2024-06-09 23:55:07 [Winston 로그] info: visitor router 요청
+2024-06-09 23:55:07 [Winston 로그] info: visitor router 시작
+2024-06-09 23:55:07 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 평균 방문객 정보 DB 조회
+2024-06-09 23:55:07 [Winston 로그] info: visitor 성공
+2024-06-09 23:55:17 [Winston 로그] info: weekavg router 요청
+2024-06-09 23:55:17 [Winston 로그] info: weekavg router 시작
+2024-06-09 23:55:17 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:56:19 [Winston 로그] info: weekavg router 요청
+2024-06-09 23:56:19 [Winston 로그] info: weekavg router 시작
+2024-06-09 23:56:19 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:57:09 [Winston 로그] info: weekavg router 요청
+2024-06-09 23:57:09 [Winston 로그] info: weekavg router 시작
+2024-06-09 23:57:09 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:57:26 [Winston 로그] info: weekavg router 요청
+2024-06-09 23:57:26 [Winston 로그] info: weekavg router 시작
+2024-06-09 23:57:26 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:57:28 [Winston 로그] info: weekavg router 요청
+2024-06-09 23:57:28 [Winston 로그] info: weekavg router 시작
+2024-06-09 23:57:28 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:57:46 [Winston 로그] info: weekavg router 요청
+2024-06-09 23:57:46 [Winston 로그] info: weekavg router 시작
+2024-06-09 23:57:46 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:57:54 [Winston 로그] info: weekavg router 요청
+2024-06-09 23:57:54 [Winston 로그] info: weekavg router 시작
+2024-06-09 23:57:54 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:58:17 [Winston 로그] info: weekavg router 요청
+2024-06-09 23:58:17 [Winston 로그] info: weekavg router 시작
+2024-06-09 23:58:17 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:59:18 [Winston 로그] info: weekavg router 요청
+2024-06-09 23:59:18 [Winston 로그] info: weekavg router 시작
+2024-06-09 23:59:18 [Winston 로그] info: User ID: user1 이번주, 지난주 평균 DB 조회
+2024-06-09 23:59:18 [Winston 로그] info: weekavg 성공

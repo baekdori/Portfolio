@@ -1,0 +1,41 @@
+2024-06-09 15:07:23 [Winston 로그] error: 아이디 또는 전시관이 입력되지 않았습니다
+2024-06-09 15:07:38 [Winston 로그] error: Exhibition ID exhb does not exist for user ID user1
+2024-06-09 15:07:50 [Winston 로그] error: Exhibition ID exhb11 does not exist for user ID user1
+2024-06-09 15:09:35 [Winston 로그] error: Exhibition ID exhb5가 user1에 존재하지 않습니다
+2024-06-09 15:13:03 [Winston 로그] error: User ID user44 가 존재하지 않습니다
+2024-06-09 15:45:37 [Winston 로그] error: getexhb router 에러 : Unknown column 'userId' in 'where clause'
+2024-06-09 15:48:47 [Winston 로그] error: visitor db 에러 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELEC
+		e.exhb_id,
+		DATE_FORMAT(a.time, '%Y-%m-%d %H:00:00') AS hour,
+		AVG(
+		' at line 1
+2024-06-09 15:48:47 [Winston 로그] error: visitor router 에러:  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELEC
+		e.exhb_id,
+		DATE_FORMAT(a.time, '%Y-%m-%d %H:00:00') AS hour,
+		AVG(
+		' at line 1
+2024-06-09 15:49:45 [Winston 로그] error: visitor db 에러 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELEC
+		e.exhb_id,
+		DATE_FORMAT(a.time, '%Y-%m-%d %H:00:00') AS hour,
+		AVG(
+		' at line 1
+2024-06-09 15:49:45 [Winston 로그] error: visitor router 에러:  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELEC
+		e.exhb_id,
+		DATE_FORMAT(a.time, '%Y-%m-%d %H:00:00') AS hour,
+		AVG(
+		' at line 1
+2024-06-09 15:49:58 [Winston 로그] error: visitor db 에러 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELEC
+		e.exhb_id,
+		DATE_FORMAT(a.time, '%Y-%m-%d %H:00:00') AS hour,
+		AVG(
+		' at line 1
+2024-06-09 23:53:32 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:53:47 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:55:17 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:56:19 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:57:09 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:57:26 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:57:28 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:57:46 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:57:54 [Winston 로그] error: weekavg router 에러:  exhbId is not defined
+2024-06-09 23:58:17 [Winston 로그] error: weekavg router 에러:  exhbId is not defined

@@ -1,0 +1,96 @@
+/* Login.module.css */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  color: #7c7c7c;
+}
+
+.leftside {
+  height: 100vh; /* 뷰포트의 전체 높이를 채우도록 설정 */
+  align-items: stretch; /* 자식들이 컨테이너의 높이를 채우도록 설정 */
+
+  width: 50%;
+  background: #000;
+  color: white;
+  display: flex;
+  /* align-items: center; 세로 정렬 */
+  /* justify-content: center; 가로 정렬 */
+  flex-grow: 1; /* 사용 가능한 공간을 채우도록 설정 */
+  flex-shrink: 0; /* 컨테이너가 너무 작아질 경우 축소되지 않도록 설정 */
+
+  /* 텍스트 스타일 */
+  font-size: 10rem;
+  font-style: italic;
+  letter-spacing: -10px;
+}
+
+form {
+  display: flex;
+  margin-left: 20rem;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%; /* 남은 절반의 공간을 채우도록 설정 */
+  padding: 2rem;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+form input {
+  display: block;
+  width: 50rem;
+  padding: 14px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  border-color: #c9c9c9;
+  border-style: solid;
+  outline: none;
+}
+
+form .btn {
+  width: 50rem;
+  padding: 2rem;
+  background: #7c7c7c;
+  color: #ffffff;
+  border-radius: 60px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+}
+
+form .btn:hover {
+  width: 50rem;
+  padding: 2rem;
+  background: white;
+  color: #7c7c7c;
+  border-radius: 60px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #7c7c7c;
+}
+
+div .tit {
+  display: block;
+  color: black;
+  font-size: 3rem;
+  padding-bottom: 3rem;
+  /* margin-bottom: 3rem; */
+}
+
+div .notify {
+  padding: 1rem;
+}

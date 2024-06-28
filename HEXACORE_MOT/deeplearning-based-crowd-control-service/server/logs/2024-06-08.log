@@ -1,0 +1,21 @@
+2024-06-08T06:38:03.258Z [NODE_PROJECT] info: 인포(info) 입니다.
+2024-06-08T06:38:03.291Z [NODE_PROJECT] error: 에러(error) 입니다.
+2024-06-08T06:40:51.727Z [NODE_PROJECT] info: 로그인 라우터
+2024-06-08T06:40:51.729Z [NODE_PROJECT] error: 아이디 또는 비밀번호가 비었습니다
+2024-06-08T06:40:56.436Z [NODE_PROJECT] info: 로그인 라우터
+2024-06-08T06:40:56.437Z [NODE_PROJECT] error: 아이디 또는 비밀번호가 비었습니다
+2024-06-08T06:40:59.505Z [NODE_PROJECT] info: 로그인 라우터
+2024-06-08T06:40:59.538Z [NODE_PROJECT] info: 로그인 메소드
+2024-06-08T06:40:59.539Z [NODE_PROJECT] error: 유효하지 않은 ID 또는 PW입니다.
+2024-06-08T06:41:12.336Z [NODE_PROJECT] info: 로그인 라우터
+2024-06-08T06:41:12.373Z [NODE_PROJECT] info: 로그인 메소드
+2024-06-08 16:02:54 [Winston 연습 어플리케이션] info: 로그인 라우터
+2024-06-08 16:02:54 [Winston 연습 어플리케이션] error: 유효하지 않은 ID 또는 PW입니다.
+2024-06-08 16:03:47 [undefined] info: 로그인 라우터
+2024-06-08 16:03:47 [undefined] error: 유효하지 않은 ID 또는 PW입니다.
+2024-06-08 16:05:07 [Winston 로그] info: 로그인 라우터
+2024-06-08 16:05:07 [Winston 로그] error: 유효하지 않은 ID 또는 PW입니다.
+2024-06-08 16:35:08 [Winston 로그] info: login router
+2024-06-08 16:35:08 [Winston 로그] info: 로그인에 성공했습니다.
+2024-06-08 16:35:09 [Winston 로그] info: byage router
+2024-06-08 16:35:09 [Winston 로그] info: getByAge 성공

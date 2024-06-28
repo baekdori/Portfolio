@@ -1,0 +1,22 @@
+.line-graph-container {
+    width: 1700px;
+    height: 370px;
+
+  }
+
+  .line-graph {
+    width: 100%;
+    height: 400px; /* 또는 원하는 높이로 설정 */
+  }
+  
+  .line-graph .x-axis path,
+  .line-graph .x-axis line {
+    stroke: black;
+    stroke-width: 2px;
+  }
+  
+  .line-graph .y-axis path,
+  .line-graph .y-axis line {
+    stroke: black;
+    stroke-width: 2px;
+  }

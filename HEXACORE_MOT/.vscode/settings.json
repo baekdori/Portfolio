@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "project-db-cgi.smhrd.com",
+            "port": 3307,
+            "driver": "MySQL",
+            "name": "nameww",
+            "database": "campus_23K_AI18_p3_1",
+            "username": "campus_23K_AI18_p3_1"
+        }
+    ]
+}

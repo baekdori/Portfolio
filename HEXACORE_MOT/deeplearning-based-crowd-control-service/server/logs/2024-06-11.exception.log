@@ -1,0 +1,90 @@
+2024-06-11 11:48:18 [Winston 로그] error: uncaughtException: val.slice is not a function
+TypeError: val.slice is not a function
+    at escapeString (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:202:23)
+    at Object.escape (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:56:21)
+    at Object.format (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:100:19)
+    at PoolConnection.format (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/connection.js:528:22)
+    at PoolConnection.query (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/connection.js:573:25)
+    at /Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/pool.js:154:14
+    at /Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/pool.js:49:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-06-11 11:48:18 [Winston 로그] error: uncaughtException: val.slice is not a function
+TypeError: val.slice is not a function
+    at escapeString (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:202:23)
+    at Object.escape (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:56:21)
+    at Object.format (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:100:19)
+    at PoolConnection.format (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/connection.js:528:22)
+    at PoolConnection.query (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/connection.js:573:25)
+    at /Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/pool.js:154:14
+    at /Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/pool.js:49:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-06-11 11:48:34 [Winston 로그] error: uncaughtException: val.slice is not a function
+TypeError: val.slice is not a function
+    at escapeString (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:202:23)
+    at Object.escape (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:56:21)
+    at Object.format (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:100:19)
+    at PoolConnection.format (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/connection.js:528:22)
+    at PoolConnection.query (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/connection.js:573:25)
+    at /Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/pool.js:154:14
+    at /Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/pool.js:49:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-06-11 11:48:34 [Winston 로그] error: uncaughtException: val.slice is not a function
+TypeError: val.slice is not a function
+    at escapeString (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:202:23)
+    at Object.escape (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:56:21)
+    at Object.format (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:100:19)
+    at PoolConnection.format (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/connection.js:528:22)
+    at PoolConnection.query (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/connection.js:573:25)
+    at /Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/pool.js:154:14
+    at /Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/pool.js:49:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-06-11 11:49:04 [Winston 로그] error: uncaughtException: val.slice is not a function
+TypeError: val.slice is not a function
+    at escapeString (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:202:23)
+    at Object.escape (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:56:21)
+    at Object.format (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:100:19)
+    at PoolConnection.format (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/connection.js:528:22)
+    at PoolConnection.query (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/connection.js:573:25)
+    at /Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/pool.js:154:14
+    at /Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/pool.js:49:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-06-11 11:49:04 [Winston 로그] error: uncaughtException: val.slice is not a function
+TypeError: val.slice is not a function
+    at escapeString (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:202:23)
+    at Object.escape (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:56:21)
+    at Object.format (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:100:19)
+    at PoolConnection.format (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/connection.js:528:22)
+    at PoolConnection.query (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/connection.js:573:25)
+    at /Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/pool.js:154:14
+    at /Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/pool.js:49:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-06-11 11:50:12 [Winston 로그] error: uncaughtException: val.slice is not a function
+TypeError: val.slice is not a function
+    at escapeString (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:202:23)
+    at Object.escape (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:56:21)
+    at Object.format (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:100:19)
+    at PoolConnection.format (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/connection.js:528:22)
+    at PoolConnection.query (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/connection.js:573:25)
+    at /Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/pool.js:154:14
+    at /Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/pool.js:49:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-06-11 11:50:12 [Winston 로그] error: uncaughtException: val.slice is not a function
+TypeError: val.slice is not a function
+    at escapeString (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:202:23)
+    at Object.escape (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:56:21)
+    at Object.format (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:100:19)
+    at PoolConnection.format (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/connection.js:528:22)
+    at PoolConnection.query (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/connection.js:573:25)
+    at /Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/pool.js:154:14
+    at /Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/pool.js:49:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-06-11 12:40:19 [Winston 로그] error: uncaughtException: val.slice is not a function
+TypeError: val.slice is not a function
+    at escapeString (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:202:23)
+    at Object.escape (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:56:21)
+    at Object.format (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/sqlstring/lib/SqlString.js:100:19)
+    at PoolConnection.format (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/connection.js:528:22)
+    at PoolConnection.query (/Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/connection.js:573:25)
+    at /Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/pool.js:154:14
+    at /Users/donghyeokkim/Documents/workspace/kdt-ad-dashboard/deeaplearning-based-crowd-control-service/node_modules/mysql2/lib/pool.js:49:37
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)

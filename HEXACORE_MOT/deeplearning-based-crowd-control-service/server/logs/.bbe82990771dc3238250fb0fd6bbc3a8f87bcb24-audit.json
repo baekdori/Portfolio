@@ -1,0 +1,50 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\SMHRD\\OneDrive\\Desktop\\새 폴더 (5)\\kdt-ad-dashboard\\deeaplearning-based-crowd-control-service\\server\\logs\\.bbe82990771dc3238250fb0fd6bbc3a8f87bcb24-audit.json",
+    "files": [
+        {
+            "date": 1717999879287,
+            "name": "C:\\Users\\SMHRD\\OneDrive\\Desktop\\새 폴더 (5)\\kdt-ad-dashboard\\deeaplearning-based-crowd-control-service\\server\\logs\\2024-06-10.log",
+            "hash": "f82a2441cf30172d99ab958667fff8fedcdbca947b40eedefe4f2b7147885e8d"
+        },
+        {
+            "date": 1718066450747,
+            "name": "C:\\Users\\SMHRD\\OneDrive\\Desktop\\새 폴더 (5)\\kdt-ad-dashboard\\deeaplearning-based-crowd-control-service\\server\\logs\\2024-06-11.log",
+            "hash": "fa153d106ab95f07af7193c1515baf9670824494f1ec470630f44cf7a172b521"
+        },
+        {
+            "date": 1718158073150,
+            "name": "C:\\Users\\SMHRD\\OneDrive\\Desktop\\새 폴더 (5)\\kdt-ad-dashboard\\deeaplearning-based-crowd-control-service\\server\\logs\\2024-06-12.log",
+            "hash": "21f7b3e5bb64148da73160145b00d7550994060698157216a445b5b37d5d73d8"
+        },
+        {
+            "date": 1718240008407,
+            "name": "C:\\Users\\SMHRD\\OneDrive\\Desktop\\새 폴더 (5)\\kdt-ad-dashboard\\deeaplearning-based-crowd-control-service\\server\\logs\\2024-06-13.log",
+            "hash": "97322213762d6883eb3eeef2ebf684adf40459b12fd80d1305ddcd07f0b47ea8"
+        },
+        {
+            "date": 1718324508972,
+            "name": "C:\\Users\\SMHRD\\OneDrive\\Desktop\\새 폴더 (5)\\kdt-ad-dashboard\\deeaplearning-based-crowd-control-service\\server\\logs\\2024-06-14.log",
+            "hash": "f36961bcc3ade7994cb3c86a08b0ed794c1528005881229ecef6c8c683e9ef50"
+        },
+        {
+            "date": 1718409636970,
+            "name": "C:\\Users\\SMHRD\\OneDrive\\Desktop\\새 폴더 (5)\\kdt-ad-dashboard\\deeaplearning-based-crowd-control-service\\server\\logs\\2024-06-15.log",
+            "hash": "9bcbc99ca1e7531e53669759132015c54fa37dad9d6e14a94709f0352aabc62e"
+        },
+        {
+            "date": 1718582852082,
+            "name": "C:\\Users\\SMHRD\\OneDrive\\Desktop\\새 폴더 (5)\\kdt-ad-dashboard\\deeaplearning-based-crowd-control-service\\server\\logs\\2024-06-17.log",
+            "hash": "e2d9bb83466da43760585e5ff49bad159432e5ba6d649ca5dc155e209602321d"
+        },
+        {
+            "date": 1718670785095,
+            "name": "C:\\Users\\SMHRD\\OneDrive\\Desktop\\새 폴더 (5)\\kdt-ad-dashboard\\deeaplearning-based-crowd-control-service\\server\\logs\\2024-06-18.log",
+            "hash": "a0b3de284ea25a361eee4ff3fcb5c9f4e0f04a4e3f201e29df94073d73664312"
+        }
+    ],
+    "hashType": "sha256"
+}

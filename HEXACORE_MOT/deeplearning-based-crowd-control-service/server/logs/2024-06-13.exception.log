@@ -1,0 +1,24 @@
+2024-06-13 08:46:36 [Winston 로그] error: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (C:\Users\smhrd\Desktop\실전_w\deeaplearning-based-crowd-control-service\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\Users\smhrd\Desktop\실전_w\deeaplearning-based-crowd-control-service\server\server.js:67:5)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+2024-06-13 10:36:08 [Winston 로그] error: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1872:16)
+    at listenInCluster (node:net:1920:12)
+    at Server.listen (node:net:2008:7)
+    at Function.listen (C:\Users\smhrd\Desktop\실전_w\deeaplearning-based-crowd-control-service\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\Users\smhrd\Desktop\실전_w\deeaplearning-based-crowd-control-service\server\server.js:67:5)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)

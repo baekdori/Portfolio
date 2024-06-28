@@ -1,0 +1,13 @@
+.pieChartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.total {
+  display: flex;
+  margin-top: -7rem;
+  font-size: 3rem;
+  justify-content: center;
+}

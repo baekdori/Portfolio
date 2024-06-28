@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\smhrd\\Desktop\\실전_workspace\\deeaplearning-based-crowd-control-service\\logs\\.8855698397394e968d20cf18cadb877c6c424ecf-audit.json",
+    "files": [
+        {
+            "date": 1718072886107,
+            "name": "C:\\Users\\smhrd\\Desktop\\실전_workspace\\deeaplearning-based-crowd-control-service\\logs\\2024-06-11.log",
+            "hash": "39ccc691be7256e1a65c8d93af5c9fc05cf4fe28d87b8f083742651a70e193f5"
+        },
+        {
+            "date": 1718170203700,
+            "name": "C:\\Users\\smhrd\\Desktop\\실전_workspace\\deeaplearning-based-crowd-control-service\\logs\\2024-06-12.log",
+            "hash": "2117c3857eea78928339038e4f37973a7bb18ad258ede2fb504dd3d13def0818"
+        },
+        {
+            "date": 1718324317481,
+            "name": "C:\\Users\\smhrd\\Desktop\\실전_workspace\\deeaplearning-based-crowd-control-service\\logs\\2024-06-14.log",
+            "hash": "277c8958cb87843347f5232a546dcee42849336092a70fc7a09c1ab7ff939c0d"
+        },
+        {
+            "date": 1718377247693,
+            "name": "C:\\Users\\smhrd\\Desktop\\실전_workspace\\deeaplearning-based-crowd-control-service\\logs\\2024-06-15.log",
+            "hash": "a5d553cfc765558f25402ce186ba5a85a5cb9a0e5e49b1f05b52ed920b29fb90"
+        }
+    ],
+    "hashType": "sha256"
+}

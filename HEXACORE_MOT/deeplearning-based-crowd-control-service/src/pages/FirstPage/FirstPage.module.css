@@ -1,0 +1,97 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-right: 240px;
+  /* 오른쪽 패딩 240px 추가 */
+}
+
+.content {
+  padding-left: 300px;
+  /* 왼쪽 마진 240px */
+  padding-right: 200px;
+  /* 오른쪽 마진 120px */
+  width: calc(100% - 500px);
+  /* 좌우 마진 300px + 220px 제외한 너비 */
+  margin: 0 auto;
+  /* 가운데 정렬 */
+  height: 100%;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.fitWidth {
+  width: fit-content;
+}
+
+#title {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.WeekOrNowCol {
+  margin-top: -8px;
+  /* 도넛 차트들과 아래 요소들을 8px씩 위로 이동 */
+}
+
+.gridcontent {
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  width: 100%;
+  gap: 40px;
+  text-align: center;
+}
+
+.griditem {
+  margin-top: -68px;
+  /* 이 줄을 추가하면 위로 50px 올라감 */
+}
+
+.dinfoBox {
+  width: 150px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.half1,
+.half2 {
+  width: 100%;
+}
+
+.half1 {
+  margin-right: 4rem;
+  /* width: 100%;
+  justify-content: center;
+  align-items: center; */
+}
+
+/* .half2 Header {
+    width: calc(90%); /* 기존 너비에 20픽셀 추가
+    } */
+.half2 {
+  margin-left: 20px;
+  padding-right: 40px;
+  /* width: 100%;
+  justify-content: center;
+  align-items: center; */
+}
+
+.Raw {
+  margin-top: -16px;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+
