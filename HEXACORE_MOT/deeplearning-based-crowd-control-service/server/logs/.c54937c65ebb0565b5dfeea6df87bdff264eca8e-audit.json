@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\USER\\Portfolio\\HEXACORE_MOT\\deeplearning-based-crowd-control-service\\server\\logs\\.c54937c65ebb0565b5dfeea6df87bdff264eca8e-audit.json",
+    "files": [
+        {
+            "date": 1719543029770,
+            "name": "C:\\Users\\USER\\Portfolio\\HEXACORE_MOT\\deeplearning-based-crowd-control-service\\server\\logs\\2024-06-28.exception.log",
+            "hash": "54810b771e1d7011b9db2030c86456c6a059985e282a9caa2a8c52335504ab27"
+        }
+    ],
+    "hashType": "sha256"
+}
