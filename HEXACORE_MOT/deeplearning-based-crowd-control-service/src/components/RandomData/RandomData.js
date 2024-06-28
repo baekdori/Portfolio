@@ -19,12 +19,13 @@ connection.connect((err) => {
     }
     console.log('Connected to database');
 });
-
+// const startTime = moment.tz(`${date} 09:00:00`, 'YYYY-MM-DD HH:mm:ss', 'Asia/Seoul'); // 시작 시간 설정
+// const endTime = moment.tz(`${date} 18:00:00`, 'YYYY-MM-DD HH:mm:ss', 'Asia/Seoul'); // 종료 시간 설정
 
 app.get('/insertData', (req, res) => {
     const date = req.query.date;
-    const startTime = moment.tz(`${date} 09:00:00`, 'YYYY-MM-DD HH:mm:ss', 'Asia/Seoul'); // 시작 시간 설정
-const endTime = moment.tz(`${date} 18:00:00`, 'YYYY-MM-DD HH:mm:ss', 'Asia/Seoul'); // 종료 시간 설정
+    const startTime = moment.tz('2024-06-18 09:00:00', 'YYYY-MM-DD HH:mm:ss', 'Asia/Seoul'); // 시작 시간 설정
+    const endTime = moment.tz('2024-06-18 18:00:00', 'YYYY-MM-DD HH:mm:ss', 'Asia/Seoul'); // 종료 시간 설정
     const interval = 30 * 1000; // 60 seconds interval
 
     let currentTime = moment(startTime);
