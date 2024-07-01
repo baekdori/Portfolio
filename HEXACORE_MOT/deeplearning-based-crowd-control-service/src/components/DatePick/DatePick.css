@@ -5,7 +5,7 @@
   width : 10%;
   height: 4.7%; /* 50px */
   padding-left: 10%;
-  border-radius: 10%; /* 8px based on 1920x1080 resolution */
+  border-radius: 10px;
 }
 
 .datepick {
@@ -15,7 +15,7 @@
   padding: 8px;
   cursor: pointer;
   border: none;
-  border-radius: 10%; /* 8px based on 1920x1080 resolution */
+  border-radius: 10px;
 }
 
 .calendar {

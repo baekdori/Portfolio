@@ -443,7 +443,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
 
       const legend = svg
         .append("g")
-        .attr("transform", `translate(${width - 200}, 15)`);
+        .attr("transform", `translate(${width - 210}, 15)`);
 
       const legendData = [
         { color: "#EF476F", text: "오늘" },

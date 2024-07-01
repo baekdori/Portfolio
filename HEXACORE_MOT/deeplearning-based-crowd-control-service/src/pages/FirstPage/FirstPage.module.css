@@ -6,19 +6,14 @@ body {
 
 header {
   padding-right: 240px;
-  /* 오른쪽 패딩 240px 추가 */
+  
 }
 
 .content {
-  padding-left: 300px;
-  /* 왼쪽 마진 240px */
-  padding-right: 200px;
-  /* 오른쪽 마진 120px */
-  width: calc(100% - 500px);
-  /* 좌우 마진 300px + 220px 제외한 너비 */
-  margin: 0 auto;
-  /* 가운데 정렬 */
-  height: 100%;
+  padding-left: 300px; /* 왼쪽 마진 240px */
+  padding-right: 170px; /* 오른쪽 마진 120px */
+  width: calc(100% - 500px); /* 좌우 마진 300px + 220px 제외한 너비 */
+  margin: 0 auto; /* 가운데 정렬 */
 }
 
 .fullWidth {
@@ -30,28 +25,24 @@ header {
 }
 
 #title {
-  font-size: 25px;
+  font-size: 30px;
+  margin-bottom: 40px;
+  padding-top: 3px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.WeekOrNowCol {
-  margin-top: -8px;
-  /* 도넛 차트들과 아래 요소들을 8px씩 위로 이동 */
 }
 
 .gridcontent {
   display: grid;
   grid-template-columns: repeat(4, 23%);
   width: 100%;
-  gap: 40px;
   text-align: center;
+  padding-right : 49px;
 }
 
 .griditem {
-  margin-top: -68px;
-  /* 이 줄을 추가하면 위로 50px 올라감 */
+
+  position: relative; /* 흰색 사각형을 위한 상대적 위치 설정 */
 }
 
 .dinfoBox {
@@ -66,32 +57,37 @@ header {
 
 .half1,
 .half2 {
+  margin-right: 2rem;
+  padding-right: 2rem;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .half1 {
   margin-right: 4rem;
-  /* width: 100%;
-  justify-content: center;
-  align-items: center; */
 }
 
-/* .half2 Header {
-    width: calc(90%); /* 기존 너비에 20픽셀 추가
-    } */
 .half2 {
   margin-left: 20px;
   padding-right: 40px;
-  /* width: 100%;
-  justify-content: center;
-  align-items: center; */
 }
 
 .Raw {
-  margin-top: -16px;
+  margin-top: 30px;
   display: flex;
   width: 100%;
   overflow: hidden;
 }
 
-
+.chartContainer {
+  position: flex;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; /* 흰색 배경 */
+  border-radius: 15px;
+  gap : 20px;
+}

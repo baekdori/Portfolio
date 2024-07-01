@@ -12,7 +12,7 @@ header {
 
 .content {
   padding-left: 300px; /* 왼쪽 마진 240px */
-  padding-right: 200px; /* 오른쪽 마진 120px */
+  padding-right: 170px; /* 오른쪽 마진 120px */
   width: calc(100% - 500px); /* 좌우 마진 300px + 220px 제외한 너비 */
   margin: 0 auto; /* 가운데 정렬 */
 }
@@ -40,7 +40,7 @@ header {
 .dropdownContainer {
   position: relative;
   width: 5.2083%; /* 100px */
-  height: 2.8%; /* 36px */
+
   border-radius: 10%;
   background-color: #b4c4d6;
 }
@@ -51,7 +51,7 @@ header {
   right: 1.0417%; /* 20px */
   z-index: 2; /* 다른 요소들보다 위에 표시되도록 설정 */
   width: 2.6042%; /* 50px */
-  height: 4.7%; /* 50px */
+ 
 }
 
 .calendarIcon img {
@@ -207,8 +207,9 @@ header {
 .exhibitionSelect {
   display: flex;
   margin: 3rem;
-  padding: 8px;
+  padding: 4px;
   font-size: 2rem;
+  border-radius: 5px; /* Setting border-radius to 5 pixels */
   align-items: start;
 }
 
@@ -226,4 +227,12 @@ header {
   width: 100%;
   height: 370px;
   background-color: #ffffff;
-  border-radius: 15px;}
+  border-radius: 15px;
+}
+
+.dangerBarContainer {
+  width: 100%;
+  height: 370px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}

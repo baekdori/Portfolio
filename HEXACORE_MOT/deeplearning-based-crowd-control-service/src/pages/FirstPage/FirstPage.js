@@ -20,7 +20,6 @@ const FirstPage = () => {
   const [blineDataf, setBLineData] = useState([]);
   const [weekavg, setWeekAvg] = useState([]);
 
-
   const fetchData = async () => {
     // 세션에서 아이디 가져오기
     let userId;
@@ -167,45 +166,52 @@ const FirstPage = () => {
                 실시간 밀집도
               </Header>
               <div className={styles.griditem}>
-                <DoughnutChart
-                  doughnutdata={d1Data}
-                  exhibition="제1전시관"
-                  yesterday={dBottomData[0]?.y ?? 0}
-                  week={dBottomData[0]?.w ?? 0}
-                  month={dBottomData[0]?.m ?? 0}
-                />
+                <div className={styles.chartContainer}>
+                  <DoughnutChart
+                    doughnutdata={d1Data}
+                    exhibition="제1전시관"
+                    yesterday={dBottomData[0]?.y ?? 0}
+                    week={dBottomData[0]?.w ?? 0}
+                    month={dBottomData[0]?.m ?? 0}
+                  />
+                </div>
               </div>
               <div className={styles.griditem}>
-                <DoughnutChart
-                  doughnutdata={d2Data}
-                  exhibition="제2전시관"
-                  yesterday={dBottomData[1]?.y ?? 0}
-                  week={dBottomData[1]?.w ?? 0}
-                  month={dBottomData[1]?.m ?? 0}
-                />
+                <div className={styles.chartContainer}>
+                  <DoughnutChart
+                    doughnutdata={d2Data}
+                    exhibition="제2전시관"
+                    yesterday={dBottomData[1]?.y ?? 0}
+                    week={dBottomData[1]?.w ?? 0}
+                    month={dBottomData[1]?.m ?? 0}
+                  />
+                </div>
               </div>
               <div className={styles.griditem}>
-                <DoughnutChart
-                  doughnutdata={d3Data}
-                  exhibition="제3전시관"
-                  yesterday={dBottomData[2]?.y ?? 0}
-                  week={dBottomData[2]?.w ?? 0}
-                  month={dBottomData[2]?.m ?? 0}
-                />
+                <div className={styles.chartContainer}>
+                  <DoughnutChart
+                    doughnutdata={d3Data}
+                    exhibition="제3전시관"
+                    yesterday={dBottomData[2]?.y ?? 0}
+                    week={dBottomData[2]?.w ?? 0}
+                    month={dBottomData[2]?.m ?? 0}
+                  />
+                </div>
               </div>
               <div className={styles.griditem}>
-                <DoughnutChart
-                  doughnutdata={d4Data}
-                  exhibition="제4전시관"
-                  yesterday={dBottomData[3]?.y ?? 0}
-                  week={dBottomData[3]?.w ?? 0}
-                  month={dBottomData[3]?.m ?? 0}
-                />
+                <div className={styles.chartContainer}>
+                  <DoughnutChart
+                    doughnutdata={d4Data}
+                    exhibition="제4전시관"
+                    yesterday={dBottomData[3]?.y ?? 0}
+                    week={dBottomData[3]?.w ?? 0}
+                    month={dBottomData[3]?.m ?? 0}
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      
 
         <ToastContainer
           position="bottom-center"

@@ -3,18 +3,20 @@
 }
 .body {
   overflow-x: hidden;
-  overflow-y: auto; /* 수직 스크롤 활성화 */
   margin: 0;
   padding: 0;
 }
 header {
-  padding-right: 220px; /* 오른쪽 패딩 220px 추가 */
+  padding-right: 240px;
 }
-
+.graphContainer {
+  padding-top:25px;
+  padding-right: 17px;
+}
 .content {
-  padding-left: 300px; /* 왼쪽 패딩 300px */
-  padding-right: 200px; /* 오른쪽 패딩 200px */
-  width: calc(100% - 500px); /* 좌우 패딩 제외한 너비 */
+  padding-left: 300px; /* 왼쪽 마진 240px */
+  padding-right: 170px; /* 오른쪽 마진 120px */
+  width: calc(100% - 500px); /* 좌우 마진 300px + 220px 제외한 너비 */
   margin: 0 auto; /* 가운데 정렬 */
 }
 
@@ -28,13 +30,14 @@ header {
 
 #title {
   font-size: 30px;
+  margin-bottom: 15px;
   padding-top: 3px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .resultContainer{
-  width : 1920px;
+  
+  width : 100%;
   height : 500px;
   display: flex;
   align-items: flex-start;

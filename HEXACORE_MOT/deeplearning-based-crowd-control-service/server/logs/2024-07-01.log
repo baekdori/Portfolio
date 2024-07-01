@@ -926,3 +926,7 @@
 2024-07-01 15:28:01 [Winston 로그] info: visitor router 시작
 2024-07-01 15:28:01 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 평균 방문객 정보 DB 조회
 2024-07-01 15:28:02 [Winston 로그] info: visitor 성공
+2024-07-01 15:29:02 [Winston 로그] info: visitor router 요청
+2024-07-01 15:29:02 [Winston 로그] info: visitor router 시작
+2024-07-01 15:29:02 [Winston 로그] info: User ID: user1, Exhibition ID: exhb1 평균 방문객 정보 DB 조회
+2024-07-01 15:29:02 [Winston 로그] info: visitor 성공
