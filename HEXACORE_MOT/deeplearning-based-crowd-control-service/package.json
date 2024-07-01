@@ -13,7 +13,7 @@
     "express": "^4.19.2",
     "express-session": "^1.18.0",
     "heatmap.js": "^2.0.5",
-    "mysql2": "^3.10.1",
+    "mysql2": "^3.10.2",
     "qrcode": "^1.5.3",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.1",
