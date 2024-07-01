@@ -205,46 +205,7 @@ const FirstPage = () => {
             </div>
           </div>
         </div>
-        <div className={styles.RawParent}>
-          <div className={styles.Raw}>
-            <div className={styles.half1}>
-              <Header style={{ width: "100%" }}>일주일 추이</Header>
-              <div className={styles.WeekOrNowCol}>
-                <WeeklyVisitorTrend
-                  width={230}
-                  height={120}
-                  color1="#10A400"
-                  color2="#FF0000"
-                  useAxis={false}
-                  useDp={false}
-                  useCurve={true}
-                  weekavg={weekavg}
-                />
-              </div>
-            </div>
-            <div className={styles.half2}>
-              <Header
-                style={{
-                  /*width: "calc(100% + 20px)",*/ width: "100%",
-                  paddingRight: "10%",
-                }}
-              >
-                일일 추이
-              </Header >
-              
-              <LinePlot
-                data={blineDataf}
-                width={670}
-                height={350}
-                color="#3498DB"
-                useAxis={true}
-                useDp={true}
-                useCurve={false}
-              />
-              
-            </div>
-          </div>
-        </div>
+      
 
         <ToastContainer
           position="bottom-center"

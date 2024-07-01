@@ -68,7 +68,7 @@ const ThirdPage = () => {
             <div className={styles.exhibitionSelect}>
               <select
                 onChange={handleDropdownItemClick}
-                style={{ padding: "8px", border: "none", fontSize: "2rem" }}
+                style={{ padding: "7px", border: "none", fontSize: "2rem"}}
               >
                 <option value="제1전시관">제1전시관</option>
                 <option value="제2전시관">제2전시관</option>
@@ -84,10 +84,12 @@ const ThirdPage = () => {
         </div>
         <div className={`${styles.graphContainer} ${styles.row1}`}>
           <Header>평균 관람객 추이</Header>
+          <div className={styles.lineGraphContainer}>
           <LineGraph_2nd
             selectedDate={selectedDate}
             selectedExhibition={selectedExhibition}
           />
+          </div>
         </div>
         <div className={`${styles.graphContainer} ${styles.row2}`}>
           <Header>혼잡도 상위 구역 5곳</Header>

@@ -2,13 +2,20 @@
   position: relative;
   z-index: 1001; /* 날짜 선택기가 다른 요소들보다 위에 나타나도록 함 */
   margin-bottom: 10px;
+  width : 10%;
+  height: 4.7%; /* 50px */
+  padding-left: 10%;
+  border-radius: 10%; /* 8px based on 1920x1080 resolution */
 }
 
 .datepick {
+  width : 280%;
+  height: 4.7%; /* 50px */
   font-size: 2rem;
   padding: 8px;
   cursor: pointer;
   border: none;
+  border-radius: 10%; /* 8px based on 1920x1080 resolution */
 }
 
 .calendar {
@@ -20,6 +27,7 @@
   border-radius: 4px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1002; /* 캘린더가 다른 요소들보다 위에 나타나도록 함 */
+  border-radius: 10%; /* 8px based on 1920x1080 resolution */
 }
 
 .header {
@@ -38,6 +46,7 @@
   border: none;
   font-size: 12px;
   cursor: pointer;
+  border-radius: 10%; /* 8px based on 1920x1080 resolution */
 }
 
 .days {
@@ -54,4 +63,5 @@
 
 .day:hover {
   background-color: #f0f0f0;
+  border-radius: 10%; /* 8px based on 1920x1080 resolution */
 }

@@ -1,44 +1,53 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./DatePick.css";
 
 const DatePicker = ({ selectedDate, onDateChange }) => {
   const [calendarVisible, setCalendarVisible] = useState(false);
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
   const [currentMonth, setCurrentMonth] = useState(new Date().getMonth() + 1);
+  const calendarRef = useRef(null);
 
-  // 월별 날짜 수 계산
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (calendarRef.current && !calendarRef.current.contains(event.target)) {
+        setCalendarVisible(false);
+      }
+    };
+
+    if (calendarVisible) {
+      document.addEventListener("click", handleClickOutside);
+    } else {
+      document.removeEventListener("click", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [calendarVisible]);
+
   const getDaysInMonth = (year, month) => {
     return new Date(year, month, 0).getDate();
   };
 
-  // 날짜 선택 핸들러
   const handleDateSelect = (date) => {
-    console.log("final date", date);
     onDateChange(date);
     setCalendarVisible(false);
   };
 
-  // 현재 날짜 가져오기
   const getCurrentDate = () => {
     const today = new Date();
     const year = today.getFullYear();
     const month = today.getMonth() + 1;
     const day = today.getDate();
-    return `${year}-${month < 10 ? "0" + month : month}-${
-      day < 10 ? "0" + day : day
-    }`;
+    return `${year}-${month < 10 ? "0" + month : month}-${day < 10 ? "0" + day : day}`;
   };
 
-  // 날짜 형식 변환
   const formatDate = (date) => {
-    if (!date) return ""; // date가 undefined일 경우 빈 문자열 반환
+    if (!date) return "";
     const [year, month, day] = date.split("-");
-    return `${year}-${month.padStart(2, "0")}-${
-      day ? day.padStart(2, "0") : ""
-    }`;
+    return `${year}-${month.padStart(2, "0")}-${day ? day.padStart(2, "0") : ""}`;
   };
 
-  // 월 변경 핸들러
   const handleMonthChange = (direction) => {
     if (direction === "prev") {
       if (currentMonth === 1) {
@@ -60,7 +69,7 @@ const DatePicker = ({ selectedDate, onDateChange }) => {
   const daysInMonth = getDaysInMonth(currentYear, currentMonth);
 
   return (
-    <div className="date-picker">
+    <div className="date-picker" ref={calendarRef}>
       <input
         type="text"
         className="datepick"
@@ -72,23 +81,14 @@ const DatePicker = ({ selectedDate, onDateChange }) => {
       {calendarVisible && (
         <div className="calendar">
           <div className="header">
-            <button
-              className="nav-button"
-              onClick={() => handleMonthChange("prev")}
-            >
+            <button className="nav-button" onClick={() => handleMonthChange("prev")}>
               &lt;
             </button>
             {currentYear}-{String(currentMonth).padStart(2, "0")}
-            <button
-              className="nav-button"
-              onClick={() => handleMonthChange("next")}
-            >
+            <button className="nav-button" onClick={() => handleMonthChange("next")}>
               &gt;
             </button>
-            <button
-              className="close-button"
-              onClick={() => setCalendarVisible(false)}
-            >
+            <button className="close-button" onClick={() => setCalendarVisible(false)}>
               X
             </button>
           </div>
@@ -99,10 +99,7 @@ const DatePicker = ({ selectedDate, onDateChange }) => {
                 className="day"
                 onClick={() =>
                   handleDateSelect(
-                    `${currentYear}-${String(currentMonth).padStart(
-                      2,
-                      "0"
-                    )}-${String(day + 1).padStart(2, "0")}`
+                    `${currentYear}-${String(currentMonth).padStart(2, "0")}-${String(day + 1).padStart(2, "0")}`
                   )
                 }
               >

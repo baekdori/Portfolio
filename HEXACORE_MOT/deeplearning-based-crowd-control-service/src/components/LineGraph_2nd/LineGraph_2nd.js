@@ -54,7 +54,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
       if (data.length === 0 || isFutureDate) return; // 데이터가 없거나 미래 날짜인 경우 그래프를 그리지 않음
 
       const svgWidth = window.innerWidth * 0.755;
-      const svgHeight = window.innerHeight * 0.37;
+      const svgHeight = window.innerHeight * 0.4;
 
       const margin = { top: 50, right: 100, bottom: 70, left: 65 };
       const width = svgWidth - margin.left - margin.right;
@@ -106,7 +106,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
           d3
             .axisBottom(x)
             .ticks(d3.timeHour.every(1))
-            .tickFormat(d3.timeFormat("%H"))
+            .tickFormat(d3.timeFormat("%H시"))
         )
         .attr("font-family", "Pretendard")
         .attr("font-size", "16px")
@@ -252,11 +252,13 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
                 d3.select(this).transition().duration(100).attr("r", 9);
 
                 const hourValue = new Date(d.hour).getHours();
+                const minuteValue = new Date(d.hour).getMinutes();
 
                 tooltip
                   .html(
-                    `<div>${hourValue}시</div>
-                     <div>오늘: ${parseInt(d.current_population)}명</div>`
+                    `<div>${hourValue}시 </div><div>오늘: ${
+                      parseInt(d.current_population)
+                    }명</div>`
                   )
                   .style("visibility", "visible")
                   .style("top", `${event.pageY - 300}px`)
@@ -441,7 +443,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
 
       const legend = svg
         .append("g")
-        .attr("transform", `translate(${width - 200}, 0)`);
+        .attr("transform", `translate(${width - 200}, 15)`);
 
       const legendData = [
         { color: "#EF476F", text: "오늘" },
