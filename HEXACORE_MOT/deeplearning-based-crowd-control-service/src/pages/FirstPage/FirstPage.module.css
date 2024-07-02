@@ -34,10 +34,11 @@ header {
 
 .gridcontent {
   display: grid;
-  grid-template-columns: repeat(4, 23%);
+  grid-template-columns: repeat(4, calc(23% - 20px)); /* 각 열의 너비를 23%에서 20px를 뺀 값으로 설정 */
+  grid-gap: 40px; /* 그리드 아이템 사이의 간격을 40px로 설정 */
   width: 100%;
   text-align: center;
-  padding-right : 49px;
+  padding-right: 49px;
 }
 
 .griditem {

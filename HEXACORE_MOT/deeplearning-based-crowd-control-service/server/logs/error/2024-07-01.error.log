@@ -1,0 +1,12 @@
+2024-07-01 17:20:08 [Winston 로그] error: heatmap router 에러 : read ECONNRESET
+2024-07-01 17:20:09 [Winston 로그] error: crowded router 에러 : read ECONNRESET
+2024-07-01 17:20:09 [Winston 로그] error: bywork router 에러 : read ECONNRESET
+2024-07-01 17:48:51 [Winston 로그] error: donutchart router 에러 : read ECONNRESET
+2024-07-01 17:49:10 [Winston 로그] error: sametime router 에러:  read ECONNRESET
+2024-07-01 17:49:29 [Winston 로그] error: bytime router 에러 : read ECONNRESET
+2024-07-01 17:49:48 [Winston 로그] error: weekavg router 에러:  read ECONNRESET
+2024-07-01 18:18:50 [Winston 로그] error: donutchart router 에러 : read ECONNRESET
+2024-07-01 18:19:01 [Winston 로그] error: crowded router 에러 : read ECONNRESET
+2024-07-01 18:19:01 [Winston 로그] error: bygender router 에러 : read ECONNRESET
+2024-07-01 18:19:01 [Winston 로그] error: visitor router 에러:  read ECONNRESET
+2024-07-01 18:19:01 [Winston 로그] error: bywork router 에러 : read ECONNRESET
