@@ -161,10 +161,13 @@ const FirstPage = () => {
         <div>
           <div className={styles.Raw}>
             <div className={styles.gridcontent}>
-              <Header style={{ width: "100%", paddingRight: "10%" }}>
+        
+              <Header>
                 {" "}
                 실시간 밀집도
               </Header>
+            
+              
               <div className={styles.griditem}>
                 <div className={styles.chartContainer}>
                   <DoughnutChart

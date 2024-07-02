@@ -6,7 +6,7 @@
 }
 
 .subject {
-  /* width: 100%; */
+  width: 100%;
   grid-column: 1/5;
   background: #e4e8ee;
   color: black;
