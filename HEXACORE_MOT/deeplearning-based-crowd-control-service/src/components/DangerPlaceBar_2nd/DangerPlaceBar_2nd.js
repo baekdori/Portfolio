@@ -50,7 +50,7 @@ const BarGraph = ({ selectedDate, selectedExhibition }) => {
 
   useEffect(() => {
     if (data.length > 0) {
-      const margin = { top: 20, right: 150, bottom: 70, left: 80 };
+      const margin = { top: 10, right: 150, bottom: 70, left: 80 };
       const width = 1500 - margin.left - margin.right;
       const height = 400 - margin.top - margin.bottom;
 

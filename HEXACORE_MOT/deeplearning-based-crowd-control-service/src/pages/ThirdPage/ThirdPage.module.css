@@ -3,11 +3,11 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(239, 242, 248);
+  user-select: none;
 }
 
 header {
   padding-right: 240px; /* 오른쪽 패딩 240px 추가 */
-  
 }
 
 .content {
@@ -40,9 +40,7 @@ header {
 .dropdownContainer {
   position: relative;
   width: 5.2083%; /* 100px */
-
   border-radius: 10%;
-  background-color: #b4c4d6;
 }
 
 .calendarIcon {
@@ -51,13 +49,41 @@ header {
   right: 1.0417%; /* 20px */
   z-index: 2; /* 다른 요소들보다 위에 표시되도록 설정 */
   width: 2.6042%; /* 50px */
- 
 }
 
 .calendarIcon img {
   width: 2.6042%; /* 50px */
   height: 4.7%; /* 50px */
   cursor: pointer;
+}
+
+.exhibitionSelect {
+  display: flex;
+  margin: 3rem;
+  padding: 4px;
+  font-size: 2rem;
+  border-radius: 5px;
+  align-items: start;
+}
+
+.exhibitionSelect select {
+  padding: 7px;
+  border: none;
+  font-size: 2rem;
+  border-radius: 1rem;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.exhibitionSelect select option {
+  transition: font-size 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  background-color: transparent;
+  color: black;
+}
+
+.exhibitionSelect select option:hover {
+  font-size: 2.2rem;
+  background-color: #555555; /* 짙은 회색 */
+  color: white;
 }
 
 @keyframes slide-fade-in-dropdown-animation {
@@ -76,7 +102,7 @@ header {
 }
 
 .slide-fade-in-dropdown > ul {
-  animation: slide-fade-in-dropdown-animation 1s ease-in-out; /* Duration increased to 1s and ease-in-out added */
+  animation: slide-fade-in-dropdown-animation 3s ease-in-out;
 }
 
 @keyframes slide-fade-out-dropdown-animation {
@@ -95,13 +121,13 @@ header {
 }
 
 .slide-fade-out-dropdown > ul {
-  animation: slide-fade-out-dropdown-animation 1s ease-in-out; /* Duration increased to 1s and ease-in-out added */
+  animation: slide-fade-out-dropdown-animation 3s ease-in-out;
   animation-fill-mode: forwards;
 }
 
 .components-dropdown > ul {
   position: relative;
-  top: 0.2604%; /* 5px */
+  top: 10%; /* 5px */
   margin-top: 0;
   margin-bottom: 0.2604%; /* 5px */
   padding-left: 0;
@@ -158,9 +184,10 @@ header {
   width: 100%;
 }
 
-.row1{
-  margin-top : 40px;
+.row1 {
+  margin-top: 40px;
 }
+
 .row2,
 .row3,
 .row5 {
@@ -208,15 +235,6 @@ header {
   align-items: center;
 }
 
-.exhibitionSelect {
-  display: flex;
-  margin: 3rem;
-  padding: 4px;
-  font-size: 2rem;
-  border-radius: 5px; /* Setting border-radius to 5 pixels */
-  align-items: start;
-}
-
 .shiftDown {
   font-size: 2rem;
   text-align: center;
@@ -239,4 +257,22 @@ header {
   height: 370px;
   background-color: #ffffff;
   border-radius: 15px;
+}
+
+.crowdListContainer {
+  width: 100%;
+  height: 370px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.genderAgeContainer {
+  width: 100%;
+  height: 370px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between; /* 요소를 좌우로 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  overflow: hidden;
 }

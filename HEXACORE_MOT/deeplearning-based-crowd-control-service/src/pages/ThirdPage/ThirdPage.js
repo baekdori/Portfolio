@@ -66,10 +66,7 @@ const ThirdPage = () => {
           <div id={styles.title}>
             <h2 className="thirdTitle">분석 정보</h2>
             <div className={styles.exhibitionSelect}>
-              <select
-                onChange={handleDropdownItemClick}
-                style={{ padding: "7px", border: "none", fontSize: "2rem", borderRadius : "1rem"}}
-              >
+              <select onChange={handleDropdownItemClick} className={styles.select}>
                 <option value="제1전시관">제1전시관</option>
                 <option value="제2전시관">제2전시관</option>
                 <option value="제3전시관">제3전시관</option>
@@ -85,52 +82,54 @@ const ThirdPage = () => {
         <div className={`${styles.graphContainer} ${styles.row1}`}>
           <Header>평균 관람객 추이</Header>
           <div className={styles.lineGraphContainer}>
-          <LineGraph_2nd
-            selectedDate={selectedDate}
-            selectedExhibition={selectedExhibition}
-          />
+            <LineGraph_2nd
+              selectedDate={selectedDate}
+              selectedExhibition={selectedExhibition}
+            />
           </div>
         </div>
         <div className={`${styles.graphContainer} ${styles.row2}`}>
           <Header>혼잡도 상위 구역 5곳</Header>
           <div className={styles.dangerBarContainer}>
-          <DangerPlaceBar_2nd
-            selectedDate={selectedDate}
-            selectedExhibition={selectedExhibition}
-          />
+            <DangerPlaceBar_2nd
+              selectedDate={selectedDate}
+              selectedExhibition={selectedExhibition}
+            />
           </div>
           <div className={styles.hcenterdanger}></div>
         </div>
         <div className={`${styles.graphContainer} ${styles.row3}`}>
           <Header>구역별 체류 인원/평균 체류 시간 목록</Header>
-          <StayCrowdTime_2nd
-            selectedDate={selectedDate}
-            selectedExhibition={selectedExhibition}
-          />
-          <div className={styles.hcenter}></div>
-        </div>
-        <div className={`${styles.graphContainer} ${styles.row4}`}></div>
-        <div className={`${styles.graphContainer} ${styles.row5}`}>
-          <Header>관람객 남녀, 연령대 통계</Header>
-          <div className={styles.left}>
-            <GenderAgePieChart_2nd
-              totalSum={dataFromBar}
-              setSelectedData={setSelectedData}
+          <div className={styles.crowdListContainer}>
+            <StayCrowdTime_2nd
               selectedDate={selectedDate}
               selectedExhibition={selectedExhibition}
-              selectedGenderData={selectedData}
             />
           </div>
-          <div className={styles.right}>
-            <div className={styles.shiftDown}>
-              <div className={styles.txt}>
-                {dataFromBar}명
-                <GenderAgeBar_2nd
-                  totalSum={dataFromBar}
-                  data={selectedData}
-                  className={styles.genderbar}
-                  onData={handleDataFromBar}
-                />
+          <div className={styles.hcenter}></div>
+        </div>
+        <div className={`${styles.graphContainer}`}>
+          <Header>관람객 남녀, 연령대 통계</Header>
+          <div className={styles.genderAgeContainer}>
+            <div className={styles.left}>
+              <GenderAgePieChart_2nd
+                totalSum={dataFromBar}
+                setSelectedData={setSelectedData}
+                selectedDate={selectedDate}
+                selectedExhibition={selectedExhibition}
+                selectedGenderData={selectedData}
+              />
+            </div>
+            <div className={styles.right}>
+              <div className={styles.shiftDown}>
+                <div className={styles.txt}>
+                  <GenderAgeBar_2nd
+                    totalSum={dataFromBar}
+                    data={selectedData}
+                    className={styles.genderbar}
+                    onData={handleDataFromBar}
+                  />
+                </div>
               </div>
             </div>
           </div>

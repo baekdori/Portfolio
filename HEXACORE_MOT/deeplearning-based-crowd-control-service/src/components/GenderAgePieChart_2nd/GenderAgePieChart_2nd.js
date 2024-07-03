@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
-import "./GenderAgePieChart_2nd.module.css";
 import axios from "axios";
 
 const GenderAgePieChart = ({
@@ -12,6 +11,8 @@ const GenderAgePieChart = ({
   const [data, setData] = useState(null);
   const [ageData, setAgeData] = useState(null);
   const [selectedGender, setSelectedGender] = useState("male");
+  const [pieChartRendered, setPieChartRendered] = useState(false);
+  const [isChartVisible, setIsChartVisible] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,11 +26,11 @@ const GenderAgePieChart = ({
         const exhbId = selectedExhibition;
         const date = selectedDate;
 
-        const response = await axios.get(`http://localhost:4000/bygender`, {
+        const response = await axios.get("http://localhost:4000/bygender", {
           params: { userId, exhbId, date },
           withCredentials: true,
         });
-        const response2 = await axios.get(`http://localhost:4000/byage`, {
+        const response2 = await axios.get("http://localhost:4000/byage", {
           params: { userId, exhbId, date },
           withCredentials: true,
         });
@@ -48,7 +49,25 @@ const GenderAgePieChart = ({
   }, [selectedDate, selectedExhibition]);
 
   useEffect(() => {
-    if (data && ageData) {
+    const handleScroll = () => {
+      const scrollY = window.scrollY || window.pageYOffset;
+      const chartTop = svgRef.current.getBoundingClientRect().top;
+      const isTopVisible = chartTop < window.innerHeight;
+
+      if (isTopVisible && !isChartVisible) {
+        setIsChartVisible(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isChartVisible]);
+
+  useEffect(() => {
+    if (data && ageData && !pieChartRendered && isChartVisible) {
       const man_cnt = parseInt(data[0]?.["man_cnt_sum"] || 0, 10);
       const woman_cnt = parseInt(data[0]?.["woman_cnt_sum"] || 0, 10);
 
@@ -65,37 +84,38 @@ const GenderAgePieChart = ({
       const updateBarChart = (gender) => {
         if (gender === "male") {
           setSelectedData([
-            // { age: '어린이', value: child_man },
-            // { age: '청소년', value: teen_man },
-            { age: "어린이", value: youth_man },
+            { age: "어린이", value: child_man },
+            { age: "청소년", value: youth_man },
             { age: "청년", value: middle_man },
             { age: "노인", value: old_man },
           ]);
         } else {
           setSelectedData([
-            // { age: '어린이', value: child_woman },
-            // { age: '청소년', value: teen_woman },
-            { age: "어린이", value: youth_woman },
+            { age: "어린이", value: child_woman },
+            { age: "청소년", value: youth_woman },
             { age: "청년", value: middle_woman },
             { age: "노인", value: old_woman },
           ]);
         }
       };
 
-      if (selectedGender) {
-        updateBarChart(selectedGender);
-      }
-
       const svg = d3
         .select(svgRef.current)
-        .attr("width", 620)
-        .attr("height", 620);
+        .attr("width", 350)
+        .attr("height", 350);
 
-      let g = svg.select("g");
+      const g = svg
+        .append("g")
+        .attr("transform", `translate(${svg.attr("width") / 2}, ${svg.attr("height") / 2})`);
 
-      if (g.empty()) {
-        g = svg.append("g").attr("transform", `translate(${280}, ${280})`);
-      }
+      // Text label for the center of the pie chart
+      g.append("text")
+        .attr("class", "center-label")
+        .attr("text-anchor", "middle")
+        .attr("font-family", "Pretendard")
+        .attr("font-size", "2rem")
+        .text("성별을 선택하세요")
+        .attr("y", -170); // Adjust position relative to the center of the pie chart
 
       const pie = d3.pie().value((d) => d.value);
       const chartData = [
@@ -106,13 +126,11 @@ const GenderAgePieChart = ({
       const arc = d3
         .arc()
         .innerRadius(0)
-        .outerRadius(280 * 0.8);
+        .outerRadius(Math.min(svg.attr("width"), svg.attr("height")) / 2 - 30);
 
-      const arcs = g
-        .selectAll(".arc")
-        .data(pie(chartData), (d) => d.data.gender);
+      const arcs = g.selectAll(".arc").data(pie(chartData), (d) => d.data.gender);
 
-      arcs.exit().remove(); // 이전 데이터 제거
+      arcs.exit().remove();
 
       const newArcs = arcs.enter().append("g").attr("class", "arc");
 
@@ -120,7 +138,7 @@ const GenderAgePieChart = ({
         .append("path")
         .attr("fill", (d, i) => (i === 0 ? "#118AB2" : "#EF476F"))
         .attr("d", arc)
-        .attr("opacity", (d) => (selectedGender === d.data.gender ? 1 : 0.3))
+        .attr("opacity", (d) => (selectedGender === d.data.gender ? 1 : 0.3)) // Initial opacity based on selectedGender
         .on("mouseover", function () {
           d3.select(this)
             .transition()
@@ -132,10 +150,12 @@ const GenderAgePieChart = ({
           d3.select(this).transition().duration(200).attr("stroke", "none");
         })
         .on("click", function (event, d) {
-          setSelectedGender(d.data.label === "남성" ? "male" : "female");
+          setSelectedGender(d.data.gender);
+          updateBarChart(d.data.gender);
+          newArcs.selectAll("path").attr("opacity", (innerD) => (d.data.gender === innerD.data.gender ? 1 : 0.3));
         })
         .transition()
-        .duration(300)
+        .duration(3000)
         .attrTween("d", function (d) {
           const i = d3.interpolate(d.startAngle, d.endAngle);
           return function (t) {
@@ -153,31 +173,26 @@ const GenderAgePieChart = ({
         .attr("font-size", "16px")
         .text((d) => d.data.label);
 
-      // 값 텍스트 렌더링 (애니메이션 효과)
-      // newArcs
-      //   .append("text")
-      //   .attr("transform", (d) => `translate(${arc.centroid(d)})`)
-      //   .attr("dy", "1.5em")
-      //   .attr("text-anchor", "middle")
-      //   .attr("font-family", "Pretendard")
-      //   .attr("font-size", "16px")
-      //   .text(0)
-      //   .transition()
-      //   .duration(1000)
-      //   .tween("text", function (d) {
-      //     const i = d3.interpolateRound(0, d.data.value);
-      //     return function (t) {
-      //       this.textContent = i(t);
-      //     };
-      //   });
+      newArcs
+        .append("text")
+        .attr("transform", (d) => `translate(${arc.centroid(d)})`)
+        .attr("dy", "1.5em")
+        .attr("text-anchor", "middle")
+        .attr("font-family", "Pretendard")
+        .attr("font-size", "16px")
+        .text(0)
+        .transition()
+        .duration(4000)
+        .tween("text", function (d) {
+          const i = d3.interpolateRound(0, d.data.value);
+          return function (t) {
+            this.textContent = i(t);
+          };
+        });
 
-      // 파이 조각 내부에 성별 텍스트 추가
-      arcs.select("text").text((d) => d.data.label);
-
-      // 선택 여부에 따른 색감 차이
-      arcs
-        .select("path")
-        .attr("opacity", (d) => (selectedGender === d.data.gender ? 1 : 0.3));
+      setPieChartRendered(true);
+      setSelectedGender("male"); // Initialize selectedGender to "male" when pie chart is rendered
+      updateBarChart("male"); // Update bar chart with male data initially
     }
   }, [
     data,
@@ -185,11 +200,13 @@ const GenderAgePieChart = ({
     selectedGender,
     selectedDate,
     selectedExhibition,
-    setSelectedData, // 추가: 상태 변경 함수가 포함된 의존성 배열
+    setSelectedData,
+    pieChartRendered,
+    isChartVisible,
   ]);
 
   return (
-    <div>
+    <div style={{ height: "300px" }}> {/* Placeholder height to demonstrate scrolling */}
       <svg ref={svgRef}></svg>
     </div>
   );
