@@ -63,9 +63,11 @@ header {
 @keyframes slide-fade-in-dropdown-animation {
   0% {
     transform: translateY(-100%);
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -74,15 +76,17 @@ header {
 }
 
 .slide-fade-in-dropdown > ul {
-  animation: slide-fade-in-dropdown-animation 0.4s ease;
+  animation: slide-fade-in-dropdown-animation 1s ease-in-out; /* Duration increased to 1s and ease-in-out added */
 }
 
 @keyframes slide-fade-out-dropdown-animation {
   0% {
     transform: translateY(0);
+    opacity: 1;
   }
   100% {
     transform: translateY(-100%);
+    opacity: 0;
   }
 }
 
@@ -91,7 +95,7 @@ header {
 }
 
 .slide-fade-out-dropdown > ul {
-  animation: slide-fade-out-dropdown-animation 0.4s ease;
+  animation: slide-fade-out-dropdown-animation 1s ease-in-out; /* Duration increased to 1s and ease-in-out added */
   animation-fill-mode: forwards;
 }
 

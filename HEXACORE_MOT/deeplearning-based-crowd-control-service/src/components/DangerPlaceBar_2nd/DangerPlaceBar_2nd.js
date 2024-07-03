@@ -80,7 +80,7 @@ const BarGraph = ({ selectedDate, selectedExhibition }) => {
       g.append("text")
         .attr("class", "x-axis-label")
         .attr("x", width / 2)
-        .attr("y", height + margin.bottom - 20)
+        .attr("y", height + margin.bottom -35)
         .attr("text-anchor", "middle")
         .attr("font-family", "Pretendard")
         .attr("font-size", "16px")
