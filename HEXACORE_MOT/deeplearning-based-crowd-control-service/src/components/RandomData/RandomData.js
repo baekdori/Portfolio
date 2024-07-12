@@ -24,8 +24,8 @@ connection.connect((err) => {
   //
 app.get('/insertData', (req, res) => {
     const date = req.query.date;
-    const startTime = moment.tz('2024-07-10 09:00:00', 'YYYY-MM-DD HH:mm:ss', 'Asia/Seoul'); // 시작 시간 설정
-    const endTime = moment.tz('2024-07-10 18:00:00', 'YYYY-MM-DD HH:mm:ss', 'Asia/Seoul'); // 종료 시간 설정
+    const startTime = moment.tz('2024-07-11 09:00:00', 'YYYY-MM-DD HH:mm:ss', 'Asia/Seoul'); // 시작 시간 설정
+    const endTime = moment.tz('2024-07-11 18:00:00', 'YYYY-MM-DD HH:mm:ss', 'Asia/Seoul'); // 종료 시간 설정
     const interval = 30 * 1000; // 60 seconds interval 
 
     let currentTime = moment(startTime);
