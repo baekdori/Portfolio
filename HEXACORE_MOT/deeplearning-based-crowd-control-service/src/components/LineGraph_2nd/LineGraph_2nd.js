@@ -43,7 +43,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
     };
 
     fetchData(); // 데이터 가져오기 함수 호출
-    const intervalId = setInterval(fetchData, 60000); // 1분마다 fetchData 함수 호출
+    const intervalId = setInterval(fetchData, 30000); // 1분마다 fetchData 함수 호출
 
     return () => clearInterval(intervalId); // 컴포넌트가 언마운트될 때 인터벌 제거
   }, [selectedDate, selectedExhibition]); // 선택된 날짜와 전시회가 변경될 때마다 실행
@@ -105,7 +105,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
           d3 // x축 호출
             .axisBottom(x) // 아래쪽 x축 사용
             .ticks(d3.timeHour.every(1)) // 1시간마다 틱 설정
-            .tickFormat(d3.timeFormat("%H시")) // 시간 형식 설정
+            .tickFormat(d3.timeFormat("%H:%M")) // 시간 형식 설정
         )
         .attr("font-family", "Pretendard") // 폰트 설정
         .attr("font-size", "16px") // 폰트 크기 설정
@@ -168,8 +168,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
       g.append("path") // 오늘 데이터를 라인 그래프로 추가
         .datum( // 데이터 설정
           filteredDataToday.map((d) => ({
-            hour: d.hour, // 데이터의 시간
-            minute : d.hour,
+            hour: currentTime, // 데이터의 시간
             value: d.current_population, // 데이터의 현재 인구 수
           }))
         )
