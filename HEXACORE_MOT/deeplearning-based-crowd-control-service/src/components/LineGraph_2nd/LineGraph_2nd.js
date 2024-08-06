@@ -154,7 +154,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
         )
         .y((d) => y(d.value)); // y축 값 설정
 
-      const filteredDataToday = data.filter((d) => { // 오늘 데이터 필터링
+        const filteredDataToday = data.filter((d) => { // 오늘 데이터 필터링
         const dataHour = new Date(d.hour).getHours(); // 데이터의 시 값
         const dataMinute = new Date(d.hour).getMinutes(); // 데이터의 분 값
         return (
@@ -165,17 +165,91 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
         );
       });
 
-      g.append("path") // 오늘 데이터를 라인 그래프로 추가
+      g.append("path") // 오늘 데이터의 실시간 피벗
         .datum( // 데이터 설정
           filteredDataToday.map((d) => ({
-            hour: currentTime, // 데이터의 시간
+            hour: currentTime,  // 데이터의 시간
             value: d.current_population, // 데이터의 현재 인구 수
           }))
         )
+        .attr("class", "contemporary-pivot")
+        .attr("fill", "none") // 채우기 없음
+        .attr("stroke", "#EF476F") // 선 색상 설정
+        .attr("stroke-width", 7) // 선 두께 설정
+        .attr("d", line) // 라인 함수 호출
+        .join(
+          (enter) => // 새로운 데이터 포인트 추가
+            enter
+              .append("circle") // 원형 엘리먼트 추가
+              .attr("class", "contemporary-pivot") // 클래스명 설정
+              .attr("r", 7) // 반지름 설정
+              .attr("cx", (d) => // x축 값 설정
+                x(
+                  new Date(
+                    new Date().getFullYear(), // 현재 연도
+                    0, // 1월
+                    1, // 1일
+                    new Date(d.hour).getHours(), // 데이터의 시 값
+                    new Date(d.hour).getMinutes() // 데이터의 분 값
+                  )
+                )
+              )
+              .attr("cy", (d) => y(d.current_population)) // y축 값 설정
+              .attr("fill", "#EF476F") // 채우기 색상 설정
+              .on("mouseover", function (event, d) { // 마우스 오버 이벤트
+                d3.select(this).transition().duration(100).attr("r", 9); // 반지름 증가
+
+                const hourValue = new Date(d.hour).getHours(); // 시 값
+                const minuteValue = new Date(d.hour).getMinutes(); // 분 값
+
+                tooltip
+                  .html(
+                    `<div>${hourValue}시 ${minuteValue} </div><div>오늘: ${
+                      parseInt(d.current_population)
+                    }명</div>` // 툴팁 내용 설정
+                  )
+                  .style("visibility", "visible") // 툴팁 가시성 설정
+                  .style("top", `${event.pageY - 300}px`) // 툴팁 위치 설정
+                  .style("left", `${event.pageX - 300}px`);
+              })
+              .on("mousemove", function (event) { // 마우스 이동 이벤트
+                tooltip
+                  .style("top", `${event.pageY - 300}px`) // 툴팁 위치 설정
+                  .style("left", `${event.pageX - 300}px`);
+              })
+              .on("mouseout", function () { // 마우스 아웃 이벤트
+                d3.select(this).transition().duration(100).attr("r", 7); // 반지름 원래대로
+
+                tooltip.style("visibility", "hidden"); // 툴팁 가시성 설정
+              }),
+          (update) => update, // 업데이트 시 처리
+          (exit) => exit.remove() // 제거 시 처리
+        );
+
+        g.append("path") // 오늘 데이터를 라인 그래프로 추가
+        .datum( // 데이터 설정
+          filteredDataToday.map((d) => ({
+            hour: d.hour,  // 데이터의 시간
+            value: d.current_population, // 데이터의 현재 인구 수
+          }))
+        )
+        .attr("class", "current-line")
         .attr("fill", "none") // 채우기 없음
         .attr("stroke", "#EF476F") // 선 색상 설정
         .attr("stroke-width", 3) // 선 두께 설정
         .attr("d", line); // 라인 함수 호출
+
+        if (isToday) { // 오늘 날짜인 경우 현재 시간 라인 추가
+        g.append("line") // 라인 추가
+          .attr("class", "current-time-line") // 클래스명 설정
+          .attr("stroke", "blue") // 스트로크 색상 설정
+          .attr("stroke-width", 2) // 스트로크 너비 설정
+          .attr("stroke-dasharray", "4") // 스트로크 대시 배열 설정
+          .attr("x1", x(new Date(new Date().getFullYear(), 0, 1, currentHour, currentMinute))) // x축 시작 위치 설정
+          .attr("x2", x(new Date(new Date().getFullYear(), 0, 1, currentHour, currentMinute))) // x축 끝 위치 설정
+          .attr("y1", 0) // y축 시작 위치 설정
+          .attr("y2", height); // y축 끝 위치 설정
+      }
 
       const filteredDataYesterday = data.filter( // 어제 데이터 필터링
         (d) => d.yesterday_population != null

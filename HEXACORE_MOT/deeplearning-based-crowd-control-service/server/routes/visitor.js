@@ -12,7 +12,7 @@ router.get("/", async (req, res) => {
 
     const { userId, exhbId, date } = req.query; // 클라이언트에서 전달하는 date 파라미터를 받음
     const startTime = `${date} 09:00:00`;
-    const endTime = `${date} 18:00:00`;
+    const endTime = `${date} 23:59:59`;
 
     if (!userId || !exhbId) {
       logger.error("아이디 또는 전시관이 입력되지 않았습니다");

@@ -44,40 +44,28 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: black; /* 기본 배경색 */
+  transition: background 0.3s; /* 배경색 전환 효과 */
 }
 
 .sidebar .box:hover {
-  display: flex;
-  width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   background: rgb(239, 242, 248);
   color: white;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-.active {
-  display: flex;
-  width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background: rgb(61, 61, 61);
-  color: white;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.box.active {
+  background: rgb(239, 242, 248); /* 활성화된 버튼의 배경색 */
+}
+.box.active .text {
+  color: black; /* Icon color when the button is active */
 }
 
 .sidebar .icon {
-  size: 100;
   color: white;
   margin: 0 auto;
   text-align: center;
   margin-top: 1rem;
 }
-
 .sidebar .text {
   display: flex;
   color: white;
