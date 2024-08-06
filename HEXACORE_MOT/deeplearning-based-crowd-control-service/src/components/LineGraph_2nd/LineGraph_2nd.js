@@ -243,6 +243,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
         g.append("line") // 라인 추가
           .attr("class", "current-time-line") // 클래스명 설정
           .attr("stroke", "blue") // 스트로크 색상 설정
+  
           .attr("stroke-width", 2) // 스트로크 너비 설정
           .attr("stroke-dasharray", "4") // 스트로크 대시 배열 설정
           .attr("x1", x(new Date(new Date().getFullYear(), 0, 1, currentHour, currentMinute))) // x축 시작 위치 설정
