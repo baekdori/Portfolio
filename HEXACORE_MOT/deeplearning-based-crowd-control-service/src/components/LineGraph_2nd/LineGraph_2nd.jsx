@@ -197,7 +197,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
               .attr("cy", (d) => y(d.current_population)) // y축 값 설정
               .attr("fill", "#EF476F") // 채우기 색상 설정
               .on("mouseover", function (event, d) { // 마우스 오버 이벤트
-                d3.select(this).transition().duration(100).attr("r", 9); // 반지름 증가
+                d3.select(this)
 
                 const hourValue = new Date(d.hour).getHours(); // 시 값
                 const minuteValue = new Date(d.hour).getMinutes(); // 분 값
@@ -218,7 +218,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
                   .style("left", `${event.pageX - 300}px`);
               })
               .on("mouseout", function () { // 마우스 아웃 이벤트
-                d3.select(this).transition().duration(100).attr("r", 7); // 반지름 원래대로
+                d3.select(this)
 
                 tooltip.style("visibility", "hidden"); // 툴팁 가시성 설정
               }),
