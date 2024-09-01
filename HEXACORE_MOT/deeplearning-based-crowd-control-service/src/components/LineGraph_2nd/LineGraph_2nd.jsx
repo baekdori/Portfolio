@@ -75,12 +75,14 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
       const selected = new Date(selectedDate); // 선택된 날짜를 Date 객체로 변환
       const isToday = selected.toDateString() === currentTime.toDateString(); // 선택한 날짜가 오늘인지 확인
 
+      const maxHour = d3.max(data, (d) => new Date(d.hour).getHours)
+
       const x = d3 // x축 스케일 설정
         .scaleTime() // 시간 스케일 사용
         .range([0, width]) // 스케일 범위 설정
         .domain([
           new Date(new Date().getFullYear(), 0, 1, 9, 0), // 도메인 시작 (연도, 월, 일, 시, 분)
-          new Date(new Date().getFullYear(), 0, 1, 18, 0), // 도메인 끝
+          new Date(new Date().getFullYear(), 0, 1, maxHour || 18, 0), // 도메인 끝
         ]);
 
       const y = d3 // y축 스케일 설정
