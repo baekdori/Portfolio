@@ -53,7 +53,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
       if (data.length === 0 || isFutureDate) return; // 데이터가 없거나 미래 날짜인 경우 그래프를 그리지 않음
 
       const svgWidth = window.innerWidth * 0.755; // SVG 너비 설정
-      const svgHeight = window.innerHeight * 0.4; // SVG 높이 설정
+      const svgHeight = window.innerHeight * 0.75; // SVG 높이 설정
 
       const margin = { top: 50, right: 100, bottom: 70, left: 65 }; // 그래프 여백 설정
       const width = svgWidth - margin.left - margin.right; // 실제 그래프 너비 계산
@@ -82,7 +82,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
         .range([0, width]) // 스케일 범위 설정
         .domain([
           new Date(new Date().getFullYear(), 0, 1, 9, 0), // 도메인 시작 (연도, 월, 일, 시, 분)
-          new Date(new Date().getFullYear(), 0, 1, maxHour || 18, 0), // 도메인 끝
+          new Date(new Date().getFullYear(), 0, 1, 18, 0), // 도메인 끝
         ]);
 
       const y = d3 // y축 스케일 설정
@@ -167,67 +167,6 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
         );
       });
 
-      g.append("path") // 오늘 데이터의 실시간 피벗
-        .datum( // 데이터 설정
-          filteredDataToday.map((d) => ({
-            hour: currentTime,  // 데이터의 시간
-            value: d.current_population, // 데이터의 현재 인구 수
-          }))
-        )
-        .attr("class", "contemporary-pivot")
-        .attr("fill", "none") // 채우기 없음
-        .attr("stroke", "#EF476F") // 선 색상 설정
-        .attr("stroke-width", 7) // 선 두께 설정
-        .attr("d", line) // 라인 함수 호출
-        .join(
-          (enter) => // 새로운 데이터 포인트 추가
-            enter
-              .append("circle") // 원형 엘리먼트 추가
-              .attr("class", "contemporary-pivot") // 클래스명 설정
-              .attr("r", 7) // 반지름 설정
-              .attr("cx", (d) => // x축 값 설정
-                x(
-                  new Date(
-                    new Date().getFullYear(), // 현재 연도
-                    0, // 1월
-                    1, // 1일
-                    new Date(d.hour).getHours(), // 데이터의 시 값
-                    new Date(d.hour).getMinutes() // 데이터의 분 값
-                  )
-                )
-              )
-              .attr("cy", (d) => y(d.current_population)) // y축 값 설정
-              .attr("fill", "#EF476F") // 채우기 색상 설정
-              .on("mouseover", function (event, d) { // 마우스 오버 이벤트
-                d3.select(this)
-
-                const hourValue = new Date(d.hour).getHours(); // 시 값
-                const minuteValue = new Date(d.hour).getMinutes(); // 분 값
-
-                tooltip
-                  .html(
-                    `<div>${hourValue}시 ${minuteValue} </div><div>오늘: ${
-                      parseInt(d.current_population)
-                    }명</div>` // 툴팁 내용 설정
-                  )
-                  .style("visibility", "visible") // 툴팁 가시성 설정
-                  .style("top", `${event.pageY - 300}px`) // 툴팁 위치 설정
-                  .style("left", `${event.pageX - 300}px`);
-              })
-              .on("mousemove", function (event) { // 마우스 이동 이벤트
-                tooltip
-                  .style("top", `${event.pageY - 300}px`) // 툴팁 위치 설정
-                  .style("left", `${event.pageX - 300}px`);
-              })
-              .on("mouseout", function () { // 마우스 아웃 이벤트
-                d3.select(this)
-
-                tooltip.style("visibility", "hidden"); // 툴팁 가시성 설정
-              }),
-          (update) => update, // 업데이트 시 처리
-          (exit) => exit.remove() // 제거 시 처리
-        );
-
         g.append("path") // 오늘 데이터를 라인 그래프로 추가
         .datum( // 데이터 설정
           filteredDataToday.map((d) => ({
@@ -266,9 +205,10 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
           }))
         )
         .attr("fill", "none") // 채우기 없음
-        .attr("stroke", "#55D1B1") // 선 색상 설정
+        .attr("stroke", "#F2D89C") // 선 색상 설정
         .attr("stroke-width", 1) // 선 두께 설정
-        .attr("d", line); // 라인 함수 호출
+        .attr("d", line) // 라인 함수 호출
+        .attr("opacity", 0.6);
 
       const filteredDataLastWeek = data.filter( // 지난주 데이터 필터링
         (d) => d.last_week_population != null
@@ -284,6 +224,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
         .attr("fill", "none") // 채우기 없음
         .attr("stroke", "#3A9BBB") // 선 색상 설정
         .attr("stroke-width", 1) // 선 두께 설정
+        .attr("opacity", 0.4)
         .attr("d", line); // 라인 함수 호출
 
       const filteredDataLastMonth = data.filter( // 지난달 데이터 필터링
@@ -300,6 +241,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
         .attr("fill", "none") // 채우기 없음
         .attr("stroke", "#073B4C") // 선 색상 설정
         .attr("stroke-width", 1) // 선 두께 설정
+        .attr("opacity", 0.4)
         .attr("d", line); // 라인 함수 호출
 
       g.selectAll(".today-pivot") // 오늘 데이터 포인트 추가
@@ -331,7 +273,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
 
                 tooltip
                   .html(
-                    `<div>${hourValue}시 </div><div>오늘: ${
+                    `<div>${hourValue}시 ${minuteValue}분</div><div> 오늘: ${
                       parseInt(d.current_population)
                     }명</div>` // 툴팁 내용 설정
                   )
@@ -373,15 +315,17 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
                 )
               )
               .attr("cy", (d) => y(d.yesterday_population)) // y축 값 설정
-              .attr("fill", "#55D1B1") // 채우기 색상 설정
+              .attr("opacity", 0.6)
+              .attr("fill", "#F2D89C") // 채우기 색상 설정
               .on("mouseover", function (event, d) { // 마우스 오버 이벤트
                 d3.select(this).transition().duration(100).attr("r", 7); // 반지름 증가
 
                 const hourValue = new Date(d.hour).getHours(); // 시 값
+                const minuteValue = new Date(d.hour).getMinutes(); // 분 값
 
                 tooltip
                   .html(
-                    `<div>${hourValue}시</div>
+                    `<div>${hourValue}시 ${minuteValue}분</div>
                      <div>어제: ${parseInt(d.yesterday_population)}명</div>` // 툴팁 내용 설정
                   )
                   .style("visibility", "visible") // 툴팁 가시성 설정
@@ -422,15 +366,17 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
                 )
               )
               .attr("cy", (d) => y(d.last_week_population)) // y축 값 설정
+              .attr("opacity", 0.4)
               .attr("fill", "#3A9BBB") // 채우기 색상 설정
               .on("mouseover", function (event, d) { // 마우스 오버 이벤트
                 d3.select(this).transition().duration(100).attr("r", 7); // 반지름 증가
 
                 const hourValue = new Date(d.hour).getHours(); // 시 값
+                const minuteValue = new Date(d.hour).getMinutes(); // 분 값
 
                 tooltip
                   .html(
-                    `<div>${hourValue}시</div>
+                    `<div>${hourValue}시 ${minuteValue}분</div>
                      <div>지난주: ${parseInt(d.last_week_population)}명</div>` // 툴팁 내용 설정
                   )
                   .style("visibility", "visible") // 툴팁 가시성 설정
@@ -456,6 +402,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
         .join(
           (enter) => // 새로운 데이터 포인트 추가
             enter
+              
               .append("circle") // 원형 엘리먼트 추가
               .attr("class", "last-month-pivot") // 클래스명 설정
               .attr("r", 5) // 반지름 설정
@@ -471,15 +418,17 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
                 )
               )
               .attr("cy", (d) => y(d.last_month_population)) // y축 값 설정
+              .attr("opacity", 0.4)
               .attr("fill", "#073B4C") // 채우기 색상 설정
               .on("mouseover", function (event, d) { // 마우스 오버 이벤트
                 d3.select(this).transition().duration(100).attr("r", 7); // 반지름 증가
 
                 const hourValue = new Date(d.hour).getHours(); // 시 값
+                const minuteValue = new Date(d.hour).getMinutes(); // 분 값
 
                 tooltip
                   .html(
-                    `<div>${hourValue}시</div>
+                    `<div>${hourValue}시 ${minuteValue}분</div>
                      <div>지난달: ${parseInt(d.last_month_population)}명</div>` // 툴팁 내용 설정
                   )
                   .style("visibility", "visible") // 툴팁 가시성 설정
@@ -522,7 +471,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
 
       const legendData = [ // 범례 데이터 설정
         { color: "#EF476F", text: "오늘" }, // 오늘 데이터
-        { color: "#55D1B1", text: "어제" }, // 어제 데이터
+        { color: "#F2D89C", text: "어제" }, // 어제 데이터
         { color: "#3A9BBB", text: "지난주" }, // 지난주 데이터
         { color: "#073B4C", text: "지난달" }, // 지난달 데이터
       ];

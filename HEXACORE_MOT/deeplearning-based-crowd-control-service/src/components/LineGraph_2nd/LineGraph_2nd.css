@@ -1,14 +1,8 @@
-.line-graph-container {
-    width: 1700px;
-    height: 370px;
-    background-color: #ffffff; /* 흰색 배경색 */
-    border-radius: 15px; /* 모서리의 R값을 15px로 설정 */
-    }
-
   .line-graph {
     margin-top: auto;
+    
     width: 100%;
-    height: 400px; /* 또는 원하는 높이로 설정 */
+    height: 100%; /* 또는 원하는 높이로 설정 */
   }
   
   .line-graph .x-axis path,

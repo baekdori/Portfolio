@@ -1,8 +1,10 @@
 {
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.7",
     "@vgrid/react-leaflet-heatmap-layer": "^4.0.3",
     "apexcharts": "^3.49.1",
     "app-root-path": "^3.1.0",
+    "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
     "d3": "^7.9.0",
     "express": "^4.19.2",
@@ -11,6 +13,7 @@
     "leaflet": "^1.9.4",
     "moment-timezone": "^0.5.45",
     "react": "^18.3.1",
+    "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
     "react-leaflet": "^2.8.0",
     "winston": "^3.13.0",

@@ -52,7 +52,7 @@ const BarGraph = ({ selectedDate, selectedExhibition }) => {
     if (data.length > 0) {
       const margin = { top: 10, right: 150, bottom: 70, left: 80 };
       const width = 1500 - margin.left - margin.right;
-      const height = 400 - margin.top - margin.bottom;
+      const height = 810 - margin.top - margin.bottom;
 
       const maxPopulation = Math.max(...data.map((d) => d.total_population));
       const x = d3.scaleLinear().range([0, width]).domain([0, maxPopulation]);

@@ -36,7 +36,7 @@ const GenderAgeBar = ({ data, onData, totalSum }) => {
         value: (d.value / total) * 100,
       }));
 
-      const svg = d3.select(svgRef.current).attr("width", 1000).attr("height", 340); // SVG 선택 및 크기 설정
+      const svg = d3.select(svgRef.current).attr("width", 1000).attr("height", 750); // SVG 선택 및 크기 설정
 
       const margin = { top: 30, right: 0, bottom: 30, left: 0 }; // 마진 설정
       const width = svg.attr("width") - margin.left - margin.right; // 너비 계산

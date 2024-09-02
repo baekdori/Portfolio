@@ -53,7 +53,7 @@ const Exhibition = {
 		pool.query(
 		// analyze_info 테이블에서 특정 시간대의 평균 관람객 추이를 조회하는 SQL 쿼리입니다.
 		`SELECT e.exhb_id,
-		DATE_FORMAT(a.time, '%Y-%m-%d %H:00:00') AS hour,
+		DATE_FORMAT(a.time, '%Y-%m-%d %H:%i:00') AS hour,
 		AVG(CASE WHEN a.time BETWEEN ? AND ? THEN a.population END) AS current_population,
 		AVG(CASE WHEN a.time BETWEEN DATE_SUB(?, INTERVAL 1 DAY) AND DATE_SUB(?, INTERVAL 1 DAY) THEN a.population END) AS yesterday_population,
 		AVG(CASE WHEN a.time BETWEEN DATE_SUB(?, INTERVAL 1 WEEK) AND DATE_SUB(?, INTERVAL 1 WEEK) THEN a.population END) AS last_week_population,
