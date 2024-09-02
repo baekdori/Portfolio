@@ -124,6 +124,11 @@
             "date": 1725070403709,
             "name": "C:\\Users\\USER\\Portfolio\\HEXACORE_MOT\\deeplearning-based-crowd-control-service\\server\\logs\\error\\2024-08-31.error.log",
             "hash": "4c3a6544390076ba81aeb4c4ebff9a7db95185860c7b0ba7b8e42a9c35cdf3fc"
+        },
+        {
+            "date": 1725236457651,
+            "name": "C:\\Users\\USER\\Portfolio\\HEXACORE_MOT\\deeplearning-based-crowd-control-service\\server\\logs\\error\\2024-09-02.error.log",
+            "hash": "a464977cd17454e48e3cbe95686323f9f246d30f19a6700af7425cd30ceb86b6"
         }
     ],
     "hashType": "sha256"
