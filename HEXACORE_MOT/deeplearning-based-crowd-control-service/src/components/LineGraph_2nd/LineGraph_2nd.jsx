@@ -208,7 +208,12 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
         .attr("stroke", "#F2D89C") // 선 색상 설정
         .attr("stroke-width", 1) // 선 두께 설정
         .attr("d", line) // 라인 함수 호출
-        .attr("opacity", 0.6);
+        .on("mouseover", function(){
+          d3.select(this).transition().duration(100).attr("opacity", 1);
+        }) // 마우스 오버 이벤트
+        .on("mouseout", function (){
+          d3.select(this).transition().duration(100).attr("opacity", 0.6);
+        });
 
       const filteredDataLastWeek = data.filter( // 지난주 데이터 필터링
         (d) => d.last_week_population != null
@@ -225,7 +230,13 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
         .attr("stroke", "#3A9BBB") // 선 색상 설정
         .attr("stroke-width", 1) // 선 두께 설정
         .attr("opacity", 0.4)
-        .attr("d", line); // 라인 함수 호출
+        .attr("d", line) // 라인 함수 호출
+        .on("mouseover", function(){
+          d3.select(this).transition().duration(100).attr("opacity", 1);
+        }) // 마우스 오버 이벤트
+        .on("mouseout", function (){
+          d3.select(this).transition().duration(100).attr("opacity", 0.4);
+        });
 
       const filteredDataLastMonth = data.filter( // 지난달 데이터 필터링
         (d) => d.last_month_population != null
@@ -242,7 +253,13 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
         .attr("stroke", "#073B4C") // 선 색상 설정
         .attr("stroke-width", 1) // 선 두께 설정
         .attr("opacity", 0.4)
-        .attr("d", line); // 라인 함수 호출
+        .attr("d", line) // 라인 함수 호출
+        .on("mouseover", function(){
+          d3.select(this).transition().duration(100).attr("opacity", 1);
+        }) // 마우스 오버 이벤트
+        .on("mouseout", function (){
+          d3.select(this).transition().duration(100).attr("opacity", 0.4);
+        });
 
       g.selectAll(".today-pivot") // 오늘 데이터 포인트 추가
         .data(filteredDataToday) // 오늘 데이터 바인딩
@@ -318,7 +335,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
               .attr("opacity", 0.6)
               .attr("fill", "#F2D89C") // 채우기 색상 설정
               .on("mouseover", function (event, d) { // 마우스 오버 이벤트
-                d3.select(this).transition().duration(100).attr("r", 7); // 반지름 증가
+                d3.select(this).transition().duration(100).attr("opacity", 1); // opacity 1로
 
                 const hourValue = new Date(d.hour).getHours(); // 시 값
                 const minuteValue = new Date(d.hour).getMinutes(); // 분 값
@@ -338,7 +355,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
                   .style("left", `${event.pageX - 300}px`);
               })
               .on("mouseout", function () { // 마우스 아웃 이벤트
-                d3.select(this).transition().duration(100).attr("r", 5); // 반지름 원래대로
+                d3.select(this).transition().duration(100).attr("opacity", 0.6); // opacity 원래대로
 
                 tooltip.style("visibility", "hidden"); // 툴팁 가시성 설정
               }),
@@ -369,7 +386,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
               .attr("opacity", 0.4)
               .attr("fill", "#3A9BBB") // 채우기 색상 설정
               .on("mouseover", function (event, d) { // 마우스 오버 이벤트
-                d3.select(this).transition().duration(100).attr("r", 7); // 반지름 증가
+                d3.select(this).transition().duration(100).attr("opacity", 1); // opacity 1로
 
                 const hourValue = new Date(d.hour).getHours(); // 시 값
                 const minuteValue = new Date(d.hour).getMinutes(); // 분 값
@@ -389,7 +406,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
                   .style("left", `${event.pageX - 300}px`);
               })
               .on("mouseout", function () { // 마우스 아웃 이벤트
-                d3.select(this).transition().duration(100).attr("r", 5); // 반지름 원래대로
+                d3.select(this).transition().duration(100).attr("opacity", 0.4); // opacity 원래대로
 
                 tooltip.style("visibility", "hidden"); // 툴팁 가시성 설정
               }),
@@ -421,7 +438,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
               .attr("opacity", 0.4)
               .attr("fill", "#073B4C") // 채우기 색상 설정
               .on("mouseover", function (event, d) { // 마우스 오버 이벤트
-                d3.select(this).transition().duration(100).attr("r", 7); // 반지름 증가
+                d3.select(this).transition().duration(100).attr("opacity", 1); // opacity 1로
 
                 const hourValue = new Date(d.hour).getHours(); // 시 값
                 const minuteValue = new Date(d.hour).getMinutes(); // 분 값
@@ -441,7 +458,7 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
                   .style("left", `${event.pageX - 300}px`);
               })
               .on("mouseout", function () { // 마우스 아웃 이벤트
-                d3.select(this).transition().duration(100).attr("r", 5); // 반지름 원래대로
+                d3.select(this).transition().duration(100).attr("opacity", 0.4); // opacity 원래대로
 
                 tooltip.style("visibility", "hidden"); // 툴팁 가시성 설정
               }),

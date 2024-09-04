@@ -38,8 +38,8 @@ header {
 }
 
 .dropdownContainer {
-  position: relative;
-  width: 5.2083%; /* 100px */
+  position: fixed;
+  width: 5.4083%; /* 100px */
   border-radius: 10%;
 }
 
@@ -52,7 +52,7 @@ header {
 }
 
 .calendarIcon img {
-  width: 2.6042%; /* 50px */
+  width: 2.8042%; /* 50px */
   height: 4.7%; /* 50px */
   cursor: pointer;
 }
@@ -223,7 +223,7 @@ header {
 }
 
 .graphContainer {
-  
+  height : 100%;
   width: 100%;
   margin-bottom: 50px;
 }
@@ -252,6 +252,9 @@ header {
   height: 800px;
   background-color: #ffffff;
   border-radius: 15px;
+  display: flex;
+  justify-content: space-between; /* 요소를 좌우로 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
 }
 
 .dangerBarContainer {
@@ -259,6 +262,9 @@ header {
   height: 800px;
   background-color: #ffffff;
   border-radius: 15px;
+  display: flex;
+  justify-content: space-between; /* 요소를 좌우로 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
 }
 
 .crowdListContainer {
@@ -266,6 +272,9 @@ header {
   height: 800px;
   background-color: #ffffff;
   border-radius: 15px;
+  display: flex;
+  justify-content: space-between; /* 요소를 좌우로 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
 }
 
 .genderAgeContainer {

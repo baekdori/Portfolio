@@ -10,7 +10,7 @@ const Dropdown = ({ options, onSelect }) => {
   };
 
   return (
-    <div className={styles.dropdown}>
+    <div className='dropdown'>
       <button className={styles.dropdownButton} onClick={() => setIsOpen(!isOpen)}>
         전시관 선택
       </button>

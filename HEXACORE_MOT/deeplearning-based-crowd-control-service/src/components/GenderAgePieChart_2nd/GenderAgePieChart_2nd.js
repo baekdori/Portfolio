@@ -79,12 +79,14 @@ const GenderAgePieChart = ({
 
       // 남성 나이대별 데이터를 숫자로 변환
       const child_man = parseInt(ageData[0]?.sum_child_man || 0, 10);
+      const teen_man = parseInt(ageData[0]?.sum_teen_man || 0, 10);
       const youth_man = parseInt(ageData[0]?.sum_youth_man || 0, 10);
       const middle_man = parseInt(ageData[0]?.sum_middle_man || 0, 10);
       const old_man = parseInt(ageData[0]?.sum_old_man || 0, 10);
 
       // 여성 나이대별 데이터를 숫자로 변환
       const child_woman = parseInt(ageData[0]?.sum_child_woman || 0, 10);
+      const teen_woman = parseInt(ageData[0]?.sum_teen_woman || 0, 10);
       const youth_woman = parseInt(ageData[0]?.sum_youth_woman || 0, 10);
       const middle_woman = parseInt(ageData[0]?.sum_middle_woman || 0, 10);
       const old_woman = parseInt(ageData[0]?.sum_old_woman || 0, 10);
@@ -94,14 +96,16 @@ const GenderAgePieChart = ({
         if (gender === "male") {
           setSelectedData([
             { age: "어린이", value: child_man },
-            { age: "청소년", value: youth_man },
+            { age: "청소년", value: teen_man },
+            { age: "청년", value : youth_man},
             { age: "청년", value: middle_man },
             { age: "노인", value: old_man },
           ]);
         } else {
           setSelectedData([
             { age: "어린이", value: child_woman },
-            { age: "청소년", value: youth_woman },
+            { age: "청소년", value: teen_woman },
+            { age: "청년", value: youth_woman },
             { age: "청년", value: middle_woman },
             { age: "노인", value: old_woman },
           ]);
