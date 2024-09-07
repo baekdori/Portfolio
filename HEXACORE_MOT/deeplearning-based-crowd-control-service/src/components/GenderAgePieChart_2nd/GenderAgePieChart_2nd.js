@@ -91,6 +91,8 @@ const GenderAgePieChart = ({
       const middle_woman = parseInt(ageData[0]?.sum_middle_woman || 0, 10);
       const old_woman = parseInt(ageData[0]?.sum_old_woman || 0, 10);
 
+      console.log(ageData);
+      
       // 바 차트를 업데이트하는 함수 정의
       const updateBarChart = (gender) => {
         if (gender === "male") {
@@ -98,7 +100,7 @@ const GenderAgePieChart = ({
             { age: "어린이", value: child_man },
             { age: "청소년", value: teen_man },
             { age: "청년", value : youth_man},
-            { age: "청년", value: middle_man },
+            { age: "중년", value: middle_man },
             { age: "노인", value: old_man },
           ]);
         } else {
@@ -106,7 +108,7 @@ const GenderAgePieChart = ({
             { age: "어린이", value: child_woman },
             { age: "청소년", value: teen_woman },
             { age: "청년", value: youth_woman },
-            { age: "청년", value: middle_woman },
+            { age: "중년", value: middle_woman },
             { age: "노인", value: old_woman },
           ]);
         }

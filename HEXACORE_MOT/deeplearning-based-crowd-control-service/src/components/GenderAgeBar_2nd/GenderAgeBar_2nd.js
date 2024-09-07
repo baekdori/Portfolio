@@ -64,7 +64,7 @@ const GenderAgeBar = ({ data, onData, totalSum }) => {
 
       const maxValue = d3.max(adjustedData, (d) => d.value); // 최대 값 찾기
 
-      const colors = ["#F2D89C", "#55D1B1", "#3A9BBB", "#073B4C"]; // 색상 배열
+      const colors = ["#F2D89C", "#55D1B1", "#3A9BBB", "#073B4C" ,"9647ef"]; // 색상 배열
 
       const bars = g.selectAll(".bar")
         .data(adjustedData)
