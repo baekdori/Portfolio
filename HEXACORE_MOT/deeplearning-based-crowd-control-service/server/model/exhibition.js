@@ -1,3 +1,4 @@
+// exhibition.js
 // 데이터베이스 풀을 불러옵니다.
 const pool = require('./db');
 

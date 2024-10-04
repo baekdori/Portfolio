@@ -4,9 +4,6 @@ const { checkUserId } = require('../model/check');
 const router = express.Router();
 const logger = require('../logs/logger');
 
-// todo 1전시관부터 4전시관까지 한번에 받아와야함
-// ! ID는 세션값에 있으니깐 ID값으로 전체 전시관 조회하기
-
 // 도넛차트 
 router.get('/', async (req, res) => {
     logger.info('donutchart router 요청');

@@ -6,11 +6,6 @@
     "auditLog": "C:\\Users\\USER\\Portfolio\\HEXACORE_MOT\\deeplearning-based-crowd-control-service\\server\\logs\\error\\.a56493faf68b770bf9c7c385bb1bc8182c342699-audit.json",
     "files": [
         {
-            "date": 1719543029769,
-            "name": "C:\\Users\\USER\\Portfolio\\HEXACORE_MOT\\deeplearning-based-crowd-control-service\\server\\logs\\error\\2024-06-28.error.log",
-            "hash": "1fd2c7bb32a6d8da980dc3e8a47444c08a7393c052de626c201ada849112372f"
-        },
-        {
             "date": 1719810325205,
             "name": "C:\\Users\\USER\\Portfolio\\HEXACORE_MOT\\deeplearning-based-crowd-control-service\\server\\logs\\error\\2024-07-01.error.log",
             "hash": "27c46ee64089a064ec847035f7c5198c043ac5c06b35834441c38541ce12df35"
@@ -154,6 +149,11 @@
             "date": 1727147164490,
             "name": "C:\\Users\\USER\\Portfolio\\HEXACORE_MOT\\deeplearning-based-crowd-control-service\\server\\logs\\error\\2024-09-24.error.log",
             "hash": "284c31cb67a15263f4624d6845962da9cb0fa49ac5fb09bc011fa295d0790677"
+        },
+        {
+            "date": 1728016374886,
+            "name": "C:\\Users\\USER\\Portfolio\\HEXACORE_MOT\\deeplearning-based-crowd-control-service\\server\\logs\\error\\2024-10-04.error.log",
+            "hash": "f95f9ec7fa9c1cf6044b59b849ef855ffb74b4d966de18bdafcc590d539798c2"
         }
     ],
     "hashType": "sha256"

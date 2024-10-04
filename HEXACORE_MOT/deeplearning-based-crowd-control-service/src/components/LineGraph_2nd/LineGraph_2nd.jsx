@@ -1,3 +1,4 @@
+// LineGraph_2nd.jsx
 import React, { useEffect, useRef, useState } from "react"; // React의 useEffect, useRef, useState 훅을 import
 import axios from "axios"; // HTTP 요청을 위한 axios 라이브러리 import
 import * as d3 from "d3"; // d3.js 라이브러리 import
@@ -74,8 +75,6 @@ const LineGraph = ({ selectedDate, selectedExhibition }) => {
       const currentMinute = currentTime.getMinutes(); // 현재 시간의 분
       const selected = new Date(selectedDate); // 선택된 날짜를 Date 객체로 변환
       const isToday = selected.toDateString() === currentTime.toDateString(); // 선택한 날짜가 오늘인지 확인
-
-      const maxHour = d3.max(data, (d) => new Date(d.hour).getHours)
 
       const x = d3 // x축 스케일 설정
         .scaleTime() // 시간 스케일 사용

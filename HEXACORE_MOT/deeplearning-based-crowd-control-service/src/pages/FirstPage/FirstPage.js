@@ -1,7 +1,6 @@
+// FirstPage.js
 import React, { useState, useEffect } from "react";
-
 import styles from "./FirstPage.module.css";
-
 import { ToastContainer, toast } from "react-toastify";
 import WeeklyVisitorTrend from "../../components/WeeklyVisitorTrend/WeeklyVisitorTrend.js";
 import DoughnutChart from "../../components/DoughnutChart/DoughnutChart.js";

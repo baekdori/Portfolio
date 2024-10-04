@@ -1,6 +1,18 @@
 p {
     font-size: 2rem;
   }
+  .glowEffect {
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      fill-opacity: 0.1; /* 반짝임의 시작점: 투명도 */
+    }
+    to {
+      fill-opacity: 1; /* 반짝임의 끝점: 완전한 색상 */
+    }
+  }
   
   .doughnutBottom{
     font-size: 2rem;

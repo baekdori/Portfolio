@@ -1,3 +1,4 @@
+// crowded.js
 const express = require('express'); // express 모듈을 불러옵니다.
 const router = express.Router(); // express의 Router 객체를 생성합니다.
 const AnalyzeInfo = require('../model/analyze_info'); // analyze_info 모델을 불러옵니다.
@@ -38,6 +39,14 @@ router.get('/', async (req, res) => { // '/' 경로로 GET 요청이 들어왔�
 		if (!userId) { // userId가 존재하지 않는 경우
             logger.error('아이디가 입력되지 않았습니다'); // logger를 통해 "아이디가 입력되지 않았습니다" 로그를 남깁니다.
 			return res.status(400).json({ error: 'ID is null' }); // 400 상태 코드와 함께 에러 메시지를 응답합니다.
+		}
+
+		const today = new Date();
+		const selectedDate = new Date();
+
+		if (selectedDate > today) {
+			logger.error('미래 날짜에 대한 요청입니다.');
+			return res.status(400).json({error : '미래 날짜는 조회할 수 없습니다.'})
 		}
 
 		// ID 검사 
