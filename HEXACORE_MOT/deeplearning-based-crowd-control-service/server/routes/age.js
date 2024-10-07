@@ -1,3 +1,4 @@
+// age.js
 const express = require('express');
 const router = express.Router();
 const Exhibition = require('../model/exhibition');
@@ -34,29 +35,17 @@ router.get('/', async (req, res) => {
 
         // DB에서 연령별 정보 조회
         logger.info(`User ID: ${userId}, Exhibition ID: ${exhbId} 연령별 정보 DB 조회`);
-        const results = await new Promise((resolve, reject) => {
-            Exhibition.getByAge(userId, exhbId, date, (err, data) => {
-                if (err) {
-                    logger.error('byage db 에러', err);
-                    reject(err);
-                } else {
-					if(data.length >=1) {
-						logger.info('byage 성공');
-						resolve(data);
-					}
-					else {
-						logger.info('byage 데이터 없음 또는 길이가 0입니다');
-                        resolve([]);
-					}
-				}
-            });
-        });
-
-        res.json(results);
-    }
-    catch (error) {
+        const results = await Exhibition.getByAge(userId, exhbId, date);
+        if (results.length >= 1) {
+            logger.info('byage 성공');
+            return res.json(results);
+        } else {
+            logger.info('byage 데이터 없음 또는 길이가 0입니다');
+            return res.json([]);
+        }
+    } catch (error) {
         logger.error('byage 라우터 에러 :', error);
-        return res.status(500).json({ error: 'Internal Server Error' });
+        return res.status(500).json({ error: 'Internal Server Error', message: error.message });
     }
 });
 

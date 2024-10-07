@@ -1,3 +1,4 @@
+// gender.js
 const express = require('express');
 const router = express.Router();
 const Exhibition = require('../model/exhibition');
@@ -34,29 +35,17 @@ router.get('/', async (req, res) => {
 
         // DB에서 성별 정보 조회
         logger.info(`User ID: ${userId}, Exhibition ID: ${exhbId} 성별 정보 DB 조회`);
-        const results = await new Promise((resolve, reject) => {
-            Exhibition.getByGender(userId, exhbId, date, (err, data) => {
-                if (err) {
-                    logger.error('bygender db 에러', err);
-                    reject(err);
-                } else {
-					if(data.length >=1) {
-						logger.info('bygender 성공');
-						resolve(data);
-					}
-					else {
-						logger.info('bygender 데이터 없음 또는 길이가 0입니다');
-                        resolve([]);
-					}
-				}
-            });
-        })
-        console.log(results);
-        res.json(results);
-    }
-    catch (error) {
-        logger.error('bygender router 에러 :', error);
-        return res.status(500).json({ error: 'Internal Server Error' });
+        const results = await Exhibition.getByGender(userId, exhbId, date);
+        if (results.length >= 1) {
+            logger.info('bygender 성공');
+            return res.json(results);
+        } else {
+            logger.info('bygender 데이터 없음 또는 길이가 0입니다');
+            return res.json([]);
+        }
+    } catch (error) {
+        logger.error('bygender 라우터 에러 :', error);
+        return res.status(500).json({ error: 'Internal Server Error', message: error.message });
     }
 });
 
